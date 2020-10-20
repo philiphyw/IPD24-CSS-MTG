@@ -9,9 +9,13 @@ Each member writes down answers to 3 questions in the following format:
 2. What I plan to do from this scrum to next? (next 24 hours)
 3. Where do I need assistance? What do I need to figure out?
 
-1. 
-- sightseeing card: <div> + CSS
-- CSS template for framwork: base color, font (google font, color, size, etc.), header/content/footer
-
-2. 
-3. 
+OCT 20, 2020
+1. What I have done / not done since last Scrum?
+- Prototype of sightseeing card: <div> + CSS
+- Prototype of searching Page
+2. What I plan to do from this scrum to next? (next 24 hours)
+- decide: colors (background, text, ...)
+- decide: website structure
+- review and decide: 3 maijor pages of index, search and event
+3. Where do I need assistance? What do I need to figure out?
+- ?
