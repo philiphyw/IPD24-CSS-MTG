@@ -1,3 +1,10 @@
 DAILY SCRUM
 
-added by Edwin
+Format:
+
+Each member writes down answers to 3 questions in the following format:
+
+<< current date goes here >>
+1. What I have done / not done since last Scrum?
+2. What I plan to do from this scrum to next? (next 24 hours)
+3. Where do I need assistance? What do I need to figure out?
