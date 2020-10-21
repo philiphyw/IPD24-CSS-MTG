@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*--- Base colors and fonts used in the landing page ---*/
+    /* main fonts                                          'Lato', sans-serif 
+    main text colors                                    grey, white
+    background color for header and share sections      rgba(128,128,128, 0.8)
+    background color for about and contact sections     lightgrey
+    background color footer                             #333
+    buttons color                                       grey, white */
+
+
+/*--- SECTION TO ADD REUSABLE CLASSES ---*/
+
+    /* Buttons */
+    /* Cards */
+    /* Icons */
+    /* etc */
