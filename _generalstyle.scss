@@ -1,0 +1,22 @@
+$backgroundColor: #ffffff;
+$fontColor: #818181;
+$fontColorDarker: #212121;
+
+@mixin fontSetting($font) {
+  font-family: $font, Arial, sans-serif;
+  font-size: 1.6rem;
+  color: $fontColor;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: $backgroundColor;
+  @include fontSetting(Raleway);
+}
