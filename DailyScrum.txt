@@ -9,6 +9,38 @@ Each member writes down answers to 3 questions in the following format:
 2. What I plan to do from this scrum to next? (next 24 hours)
 3. Where do I need assistance? What do I need to figure out?
 
+2020/10/21 Andrey Lyamkin
+1. What I have done / not done since last Scrum?
+- built basic version for landing page
+- colors and fonts transferred at the end of the project 
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- build modal(separate page) for registration
+- build modal(separate page) for sign in
+- build the main header
+3. Where do I need assistance? What do I need to figure out?
+
+
+
+2020/10/21 Philip Huang
+1. What I have done / not done since last Scrum?
+- built mockup of a event detail page
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- build a mockup on the main header
+- build the event detail page with additional section:
+    Event Description:
+    *History
+    *Fun Facts
+    *Address
+
+    Microservices:
+    *Books a restaurant
+    *Book a hotel
+3. Where do I need assistance? What do I need to figure out?
+
+
+
+
+
 2020/10/20 Andrey Lyamkin
 1. What I have done / not done since last Scrum?
 2. What I plan to do from this scrum to next(next 24 hours)?:
