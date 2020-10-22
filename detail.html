@@ -43,17 +43,27 @@
             </div>
         </div>
     </nav>
+
     <div class="container">
-        <div class="jumbotron detail-container">
-            <h1 class="event-title row">Saint Joseph's Oratory of MountRoyal</h1>
-            <div class="event-detail col-md-6">
-                <div class="event-pic"><img src="img/montreal-saint-josephs-oratory.jpg"
-                        class="img-fluid" alt="montreal-saint-josephs-oratory"></div>
+        <!-- the title -->
+        <div class="row">
+            <h1 class="col text-center mb-5">Saint Joseph's Oratory of MountRoyal</h1>
+        </div>
+
+        <!-- the row which contains pic description rating and microservice -->
+        <div class="row mb-3">
+
+            <!-- pic & detail -->
+            <div class="col-md-6 col-lg-8 event-detail">
+                <div class="event-pic">
+                    <img src="img/montreal-saint-josephs-oratory.jpg" class="img-fluid"
+                        alt="montreal-saint-josephs-oratory">
+                </div>
                 <div class="tags">
                     <span> <i class="fa fa-tag"></i> Culture</span>
                     <span><i class="fa fa-tag"> </i> Landmark</span>
                 </div>
-                <div class="event-description">
+                <div class="event-description mt-5">
                     <p><span class="p-head">Address: </span><span class="p-content">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Iusto voluptates ducimus eius ullam.</span></p>
                     <p><span class="p-head">History: </span><span class="p-content">Lorem ipsum dolor sit amet
@@ -64,8 +74,8 @@
                 </div>
             </div>
 
-            <div class="rating-service col-md-6">
-
+            <!-- rating and microservice -->
+            <div class="col-md-6 col-lg-4 rating-service">
                 <div class="event-rating">
                     <p>
                         <i class="fas fa-star"></i>
@@ -86,12 +96,12 @@
                         <span class="p-head">Who visit here recently:</span>
                     </p>
                     <p>
-                        <img src="img/user1.png" class="img-fluid" alt="user1">
-                        <img src="img/user2.png" class="img-fluid" alt="user2">
-                        <img src="img/user3.png" class="img-fluid" alt="user3">
-                        <img src="img/user4.png" class="img-fluid" alt="user4">
-                        <img src="img/user5.png" class="img-fluid" alt="user5">
-                        <img src="img/user6.png" class="img-fluid" alt="user6">
+                        <img src="img/user1.png" alt="user1">
+                        <img src="img/user2.png" alt="user2">
+                        <img src="img/user3.png" alt="user3">
+                        <img src="img/user4.png" alt="user4">
+                        <img src="img/user5.png" alt="user5">
+                        <img src="img/user6.png" alt="user6">
 
                     </p>
                 </div>
@@ -107,40 +117,155 @@
                 </div>
             </div>
 
+        </div>
 
 
+        <!-- the row contains attractions nearby and similar attracitons -->
+        <div class="row">
+            <!-- attractions nearby -->
+            <div class="col-lg-6  px-4">
+                <div class="row mt-5">
+                    <h3 class="col text-center bg-dark text-white">Attractions Nearby</h3>
+                </div>
 
-            <div class="col-xl-6">
-                <h2>Attraction Nearby</h2>
-                <img src="img/canada-montreal-botanical-garden-2.jpg" class="img-fluid" alt="nearby-1" >
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsum.</p>
-                <p><a href="" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-            </div>
-            <div class="col-xl-6">
-                <h2>Similar Attraction in Montreal</h2>
-                <img src="img/canada-montreal-old-montreal.jpg" class="img-fluid" alt="similar-1">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <p><a href="" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-            </div>
-
-
-
-            <hr>
-            <footer>
+                <!-- Carousel -->
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>Copyright &copy; 2020 Montreal Travelling Guide</p>
-                    </div>
-                    <div class="col-md-6 text-md-right">
-                        <a href="#" class="text-dark">Terms of Use</a>
-                        <span class="text-muted mx-2">|</span>
-                        <a href="#" class="text-dark">Privacy Policy</a>
+                    <div class="container-lg ">
+                        <div id="myCarousel1" class="carousel slide" data-interval="6000" data-ride="carousel">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href=""> <img src="img/canada-montreal-old-montreal.jpg" class="img-fluid" alt="First Slide"></a>
+                                    <div class="carousel-caption d-none d-md-block bg-dark text-white">
+                                        <h5>Old Montreal</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href=""> <img src="img/canada-montreal-ile-sainte-helene.jpg" class="img-fluid"
+                                        alt="sainte-helene"></a>
+                                    <div class="carousel-caption d-none d-md-block bg-dark text-white">
+                                        <h5>Ile Sainte-Helene</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href=""> <img src="img/canada-montreal-botanical-garden-2.jpg" class="img-fluid"
+                                        alt="botanical garden"></a>
+                                    <div class="carousel-caption d-none d-md-block bg-dark text-white">
+                                        <h5>Botanical Garden</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel1" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </footer>
+
+            </div>
+
+
+
+            <!-- similar attracitons -->
+            <div class="col-lg-6  px-4">
+                <div class="row mt-5">
+                    <h3 class="col text-center text-center bg-dark text-white">Similar Attraciton</h3>
+                </div>
+
+                <!-- Carousel -->
+                <div class="row">
+                    <div class="container-lg">
+                        <div id="myCarousel2" class="carousel slide" data-interval="6000" data-ride="carousel">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                                <li data-target="#myCarousel2" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                   <a href=""> <img src="img/Christ-Church-Cathedral.jpg" class="img-fluid" alt="similar1"></a>
+                                    <div class="carousel-caption d-none d-md-block bg-dark text-white">
+                                        <h5>Church-Cathedral</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href=""> <img src="img/Sud-Ouest’s forgotten churches.jpg" class="img-fluid" alt="similar2"></a>
+                                    <div class="carousel-caption d-none d-md-block bg-dark text-white">
+                                        <h5>Sud-Ouest’s forgotten churches</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href=""> <img src="img/premiere-chapelle-de.jpg" class="img-fluid" alt="similar3"></a>
+                                    <div class="carousel-caption d-none d-md-block bg-dark text-white">
+                                        <h5>Pemiere Chapelle</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel2" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
+    </div>
+
+
+
+
+
+
+
+    <div class="row">
+        <hr class="col mt-5">
+    </div>
+
+
+    <!-- the row contains footer -->
+    <div class="row">
+        
+        <footer class="container ">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2020 Montreal Travelling Guide</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <a href="#" class="text-dark">Terms of Use</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="#" class="text-dark">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    </div>
 
 
 
