@@ -1,0 +1,142 @@
+
+/* Style header */
+.header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url("../img/header-1920.jpg");
+    background-size: cover;
+    height: 95vh;
+    background-position: top;
+    background-attachment: fixed;
+}
+.row-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-70%);
+}
+.heading_primary {
+    transition: all .2s;
+}
+.heading_primary-main {
+    display: block;
+    letter-spacing: 1rem;
+    font-weight: 400;
+    animation: moveInLeft 1.5s ease-in;
+}
+.heading_primary-sub {
+    letter-spacing: 1rem;
+    font-weight: 700;
+    animation: moveInRight 1.5s ease-in;
+}
+
+/* Style share section */
+.section_share {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/share-1920.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+/* style custom text */
+.text-custom {
+    color: #1ebba3;
+}
+
+
+/* Style custom buttons */
+.btn-custom,
+.btn-custom:link,
+.btn-custom:visited {
+    color: #fff;
+    background-color: #1ebba3;
+    border-color: #1ebba3;
+    text-transform: uppercase;
+}
+.btn-custom:hover {
+    background-color: #06a587;
+    border-color: #06a587;
+}
+.btn-custom:active {
+    background-color: #068d74;
+    border-color: #068d74;
+}
+.btn-custom:focus {
+    background-color: #12b199;
+    border-color: #12b199;
+    box-shadow: 0 0 0 0.2rem rgba(53, 209, 186,.5);
+}
+
+.btn-custom-outlined,
+.btn-custom-outlined:link,
+.btn-custom-outlined:visited {
+    color: #1ebba3;
+    background-color: #fff;
+    border:2px solid #1ebba3;
+    text-transform: uppercase;
+}
+.btn-custom-outlined:hover {
+    color: #06a587;
+    border-color: #06a587;
+}
+.btn-custom-outlined:active {
+    color: #068d74;
+    border-color: #068d74;
+}
+.btn-custom-outlined:focus {
+    color: #12b199;
+    border-color: #12b199;
+    box-shadow: 0 0 0 0.2rem rgba(53, 209, 186,.5);
+}
+
+/* Style form */
+.form-control-custom:focus {
+    color: #12b199;
+    box-shadow: 0 0 0 0.2rem rgba(53, 209, 186,.25);
+}
+
+ /* Animation style */
+ @keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem)
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem)
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        
+    }
+}
