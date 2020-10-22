@@ -9,6 +9,26 @@ Each member writes down answers to 3 questions in the following format:
 3. Where do I need assistance? What do I need to figure out?
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+2020/10/22 Andrey Lyamkin
+1. What I have done / not done since the last Scrum?
+- built modal for registration
+- built modal for sign in
+- main header not done
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- build modal for users who want to share sightseeing information
+- assist colleagues with Bootstrap
+3. Where do I need assistance? What do I need to figure out?
+
+
+2020/10/22 Philip Huang
+1. What I have done / not done since the last Scrum?
+- Build bootstrap header for testing 
+- Restrucure the detail page with bootstrap
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Complete the detail page
+- Build a FAQ page with bootstrap
+3. Where do I need assistance? What do I need to figure out?
+- Bootstrap tech support, espacillay on how to adjust the content to fit in bootstrap grid template.
 
 
 2020/10/22 Edwin Li
