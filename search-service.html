@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Explore Montreal | Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dynalight'>
+    <link rel="stylesheet" href="css/search.css" />
+  </head>
+
+  <body>
+    <div id="pageWrapper">
+      <div id="header">
+        <p style="padding: 10px;">style and content of header to be defined</p>
+      </div>
+      <div id="content">  
+          <div id="searchFilterbar">
+            <div class="title">
+              <p>Search Results for</p>
+            </div>
+            <form method="POST" action="search-sightseeing.html">
+              <div class="search">
+                <input type="text" name="search" placeholder="SEARCH" class="searchInput" maxlength="22" size="22">
+              </div>
+            </form>
+            <div class="filterWrapper">
+              <p class="subTitle"> Filter</p>
+              <p class="filterItem"><a href="search.html"><i class="fas fa-globe"></i><span>All</span></a></p>
+              <p class="filterItem"><a href="search-sightseeing.html"><i class="fas fa-eye"></i><span>Sightseeing</span></a></p>
+              <p class="filterItem"><a href="search-event.html"><i class="fas fa-calendar-check"></i><span>Event</span></a></p>
+              <p class="filterItemHighlight"><a href="search-service.html"><i class="fas fa-taxi"></i><span>Service</span></a></p>
+                <form method="POST" action="search-service.html">
+                    <div class="filterCheckbox">
+                    <div><input type="checkbox" name="filter8" id="filter8" checked>
+                    <label for="filter8">Car Retal</label></div>
+                    <div><input type="checkbox" name="filter7" id="filter7" checked>
+                        <label for="filter7">Homestay</label></div>
+                    <div><input type="checkbox" name="filter6" id="filter6" checked>
+                        <label for="filter6">Restaurant</label></div>
+                    <div><input type="checkbox" name="filter5" id="filter5" checked>
+                    <label for="filter5">Bike Rental</label></div>
+                    <div><input type="checkbox" name="filter4" id="filter4" checked>
+                        <label for="filter4">Tour Guide</label></div>
+                    <div><input type="checkbox" name="filter3" id="filter3" checked>
+                        <label for="filter3">Translator</label></div>
+                    <div><input type="checkbox" name="filter2" id="filter2" checked>
+                    <label for="filter2">Battery Charging</div>
+                    <div><input type="checkbox" name="filter1" id="filter1" checked>
+                    <label for="filter1">Other Services</label></div>
+                    </div>
+                </form>
+              <p class="filterItem"><a href="search-frdgrp.html"><i class="fas fa-user-friends"></i><span>Friend / Group</span></a></p>
+            </div>
+          </div>
+          <div id="searchResult">
+            <div class="categoryWrapper">
+                <p>Service Cards...</p>
+              </div>
+          </div>
+      </div>
+
+    </div>
+  </body>
+</html>

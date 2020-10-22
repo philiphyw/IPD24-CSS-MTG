@@ -19,15 +19,29 @@
             <div class="title">
               <p>Search Results for</p>
             </div>
-            <form method="POST" action="#">
+            <form method="POST" action="search-sightseeing.html">
               <div class="search">
                 <input type="text" name="search" placeholder="SEARCH" class="searchInput" maxlength="22" size="22">
               </div>
             </form>
             <div class="filterWrapper">
               <p class="subTitle"> Filter</p>
-              <p class="filterItemHighlight"><a href="#"><i class="fas fa-globe"></i><span>All</span></a></p>
-              <p class="filterItem"><a href="search-sightseeing.html"><i class="fas fa-eye"></i><span>Sightseeing</span></a></p>
+              <p class="filterItem"><a href="search.html"><i class="fas fa-globe"></i><span>All</span></a></p>
+              <p class="filterItemHighlight"><a href="search-sightseeing.html"><i class="fas fa-eye"></i><span>Sightseeing</span></a></p>
+              <form method="POST" action="search-sightseeing.html">
+                  <div class="filterCheckbox">
+                    <div><input type="checkbox" name="filter5" id="filter5" checked>
+                    <label for="filter5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label></div>
+                    <div><input type="checkbox" name="filter4" id="filter4" checked>
+                        <label for="filter4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label></div>
+                    <div><input type="checkbox" name="filter3" id="filter3" checked>
+                        <label for="filter3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label></div>
+                    <div><input type="checkbox" name="filter2" id="filter2" checked>
+                    <label for="filter2"><i class="fas fa-star"></i><i class="fas fa-star"></i></label></div>
+                    <div><input type="checkbox" name="filter1" id="filter1" checked>
+                    <label for="filter1"><i class="fas fa-star"></i></label></div>
+                  </div>
+                </form>
               <p class="filterItem"><a href="search-event.html"><i class="fas fa-calendar-check"></i><span>Event</span></a></p>
               <p class="filterItem"><a href="search-service.html"><i class="fas fa-taxi"></i><span>Service</span></a></p>
               <p class="filterItem"><a href="search-frdgrp.html"><i class="fas fa-user-friends"></i><span>Friend / Group</span></a></p>
@@ -212,15 +226,6 @@
                   </div>
                 </div>
               </div> 
-            </div>
-            <div class="categoryWrapper">
-              <p>Event Cards...</p>
-            </div>
-            <div class="categoryWrapper">
-              <p>Service Cards...</p>
-            </div>
-            <div class="categoryWrapper">
-              <p>Friend/Group Cards...</p>
             </div>
           </div>
       </div>

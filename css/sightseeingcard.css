@@ -63,10 +63,10 @@ body {
   background-color: white;
   -webkit-filter: blur(1px);
           filter: blur(1px);
-  -webkit-transition: -webkit-filter 500ms ease 50ms;
-  transition: -webkit-filter 500ms ease 50ms;
-  transition: filter 500ms ease 50ms;
-  transition: filter 500ms ease 50ms, -webkit-filter 500ms ease 50ms;
+  -webkit-transition: -webkit-filter, -webkit-transform 500ms ease 50ms;
+  transition: -webkit-filter, -webkit-transform 500ms ease 50ms;
+  transition: filter, transform 500ms ease 50ms;
+  transition: filter, transform 500ms ease 50ms, -webkit-filter, -webkit-transform 500ms ease 50ms;
 }
 
 .gallary .sightseeingCard .sightseeingImage img:hover {
