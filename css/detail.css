@@ -6,7 +6,7 @@
   --footer-bg-color: #333;
   --link-text-color: #1ebba3;
   --rating-star-color: orange;
-  --dakr-text-color: rgb(2, 36, 44);
+  --dark-text-color: rgb(2, 36, 44);
 }
 
 body {
@@ -49,10 +49,7 @@ body {
 }
 
 /* for the carousel */
-.carousel {
-  /* background: #2f4357; */
-  /* margin-top: 20px; */
-}
+
 .carousel-item {
   text-align: center;
   min-height: 380px; /* Prevent carousel from being distorted if for some reason image doesn't load */
