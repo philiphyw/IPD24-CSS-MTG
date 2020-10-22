@@ -1,12 +1,26 @@
 DAILY SCRUM
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Format:
-
 Each member writes down answers to 3 questions in the following format:
-
 << current date goes here >>
 1. What I have done / not done since last Scrum?
 2. What I plan to do from this scrum to next? (next 24 hours)
+3. Where do I need assistance? What do I need to figure out?
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+2020/10/22 Edwin Li
+1. What I have done / not done since last Scrum?
+- module: sightseeing card <no link>
+- module: search side bar
+- module: search filter of sightseeing
+- module: search filter of event
+- module: search filter of micro-service
+2. What I plan to do from this scrum to next? (next 24 hours)?
+- responsive layout of search page
+- migrate existing code to bootstrap
 3. Where do I need assistance? What do I need to figure out?
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -49,7 +63,7 @@ Each member writes down answers to 3 questions in the following format:
     *Book a hotel
 3. Where do I need assistance? What do I need to figure out?
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 2020/10/20 Andrey Lyamkin
 1. What I have done / not done since last Scrum?
