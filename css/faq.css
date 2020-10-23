@@ -11,17 +11,37 @@ h2 {
 }
 
 a{
-    color: var(--link-text-color);
-    font-weight: 600;
+       font-weight: 600;
 }
 
 
+.faq-header{
+    background-image: url(https://media.audleytravel.com/-/media/images/home/canada-and-the-usa/canada/places/istock531711783_montreal_city_800x2400.jpg?q=79&w=1920&h=640);
+    background-size: cover;
+    min-height: 15rem;
+    padding: 0;    
+}
+
+.additional-backgroud{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 100%;   
+     background-color: rgba(0,0,0,0.5);
+
+}
+
+/* search bar */
+.searchbar input.form-control[type=text] {
+    border:none
+}
+
+
+/* accordion */
 .accordion-section .panel-default > .panel-heading {
     border: 0;
-    /* background: #f4f4f4; */
     padding: 0;
-
-
 }
 
 .fab{
@@ -33,16 +53,14 @@ a{
     display: block;
     font-style: italic;
     font-size: 1.2rem;
-    color: var(--link-text-color);
-}
+   }
 
 .accordion-section .panel-default .panel-title a:after {
     font-family: 'FontAwesome';
     font-style: normal;
     font-size: 3rem;
     content: "\f106";
-    color: var(--link-text-color);
-    float: right;
+       float: right;
     margin-top: -12px;
 }
 
@@ -52,6 +70,7 @@ a{
 .accordion-section .panel-default .panel-body {
     font-size: 1.2rem;
 }
+
 
 
 

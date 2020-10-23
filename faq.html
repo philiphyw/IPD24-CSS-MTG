@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
   <!-- <link rel="stylesheet" href="css/main.css"> -->
   <link rel="stylesheet" href="css/faq.css">
@@ -44,162 +47,184 @@
     </div>
   </nav>
 
-  <!-- bootstrap accordion -->
+
+
+
 
   <div class="container">
+    <!-- row for FAQ header, Searchbar and Contact us by -->
     <div class="row">
-      <div class="col-lg-12">
-        <div class="row">
-          <div class="col-lg-12 hedding pl-4 pt-5 bg-success">
-            <h1>Frequent Asked <span class="display-3 text-light">Question</span></h1>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-12 mt-5">
-        <div class="container bootstrap snippet">
-          <div class="row">
-            <div class="col-md-3">
-              <h4 class="title-block first-child">Quick Search</h4>
-              <form role="form">
-                <label for="search" class="sr-only">Search</label>
-                <input type="search" class="form-control" id="search" placeholder="Search here...">
-              </form>
-              <h4 class="title-block mt-3">Helpful Links</h4>
-              <div class="menu-lg">
-                <div class="item">
-                  
-                  <div class="content">
-                    <div class="title"><a href="#"><i class="fas fas fa-mug-hot "></i> Micro-Services</a></div>
-                    <div class="description">
-                      Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet con.
-                    </div>
-                  </div>
-                </div>
-                <div class="item mt-2">
-                              <div class="content">
-                    <div class="title"><a href="#"><i class="fas fa-user "></i> Account Management</a></div>
-                    <div class="description">
-                      Sectetur adipisicing elit. Nulla, dignissimos.
-                    </div>
-                  </div>
-                </div>
-                <div class="item mt-2">
-                    <div class="content">
-                    <div class="title"><a href="#"><i class="fas fa-info "></i> Customer Service</a></div>
-                    <div class="description">
-                      Ipsum dolor, sit amet consectetur adipisicing elit..
-                    </div>
-                  </div>
-                </div>
-                <div class="item mt-2">
-                  <div class="content">
-                    <div class="title"><a href="#">Contact us by:</a></div>
-                    <div class="description">
-                      <a href=""><i class="fab fa-facebook "></i></a>
-                      <a href=""><i class="fab fa-whatsapp "></i></a>
-                      <a href=""><i class="fab fa-instagram "></i></a>
-                      <a href=""><i class="fab fa-wechat "></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+      <div class="col faq-header text-center align-middle">
+        <div class="additional-backgroud">
+          <h1 class="text-white mt-4">How can we help you?</h1>
+
+          <!-- Search form -->
+
+          <form class="form-inline d-flex justify-content-center md-form form-sm searchbar mt-2">
+            <i class="fas fa-search text-white" aria-hidden="true"></i>
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+          </form>
+
+          <!-- Contact us by -->
+          <div class="col text-center mt-3">
+            <div class="title"><a href="#" class="text-white">Contact us by: </a></div>
+            <div class="description mt-3">
+              <a href=""><i class="fab fa-facebook text-white"></i></a>
+              <a href=""><i class="fab fa-whatsapp text-white"></i></a>
+              <a href=""><i class="fab fa-instagram text-white"></i></a>
+              <a href=""><i class="fab fa-wechat text-white"></i></a>
             </div>
-
-            <section class="accordion-section second-child clearfix mt-3 col-md-9" aria-label="Question Accordions">
-              <div class="container">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapse0" aria-expanded="true" aria-controls="collapse0">
-                          How to book a restaurant near by the landmark I am going to visit?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
-                      <div class="panel-body px-3 mb-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde illo assumenda
-                          labore architecto quasi error, laborum illum molestias veritatis.</p>
-                        <ul>
-                          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi odit reprehenderit
-                            quae impedit eaque praesentium dignissimos. Atque nesciunt reprehenderit placeat
-                            totam molestias porro, nobis aliquid voluptatum molestiae non veritatis a.</li>
-                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?</li>
-                          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum incidunt assumenda
-                            temporibus ut blanditiis iure!</li>
-                          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, eius!</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel panel-default">
-                    <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                          How to add a site or event on the platform?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-                      <div class="panel-body px-3 mb-4">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, repudiandae excepturi
-                          numquam placeat magni vero accusantium laudantium totam nostrum a et porro. Sapiente
-                          deleniti consequatur animi amet adipisci? Aspernatur, molestiae.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel panel-default">
-                    <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                          How to pay the event I've booked?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                      <div class="panel-body px-3 mb-4">
-                        <p>U Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum soluta qui
-                          temporibus natus! Cupiditate commodi beatae consequuntur optio quidem..</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel panel-default">
-                    <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
-                          href="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                          Can I return my car in another place?
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                      <div class="panel-body px-3 mb-4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi dolor quisquam illo
-                          a laborum eligendi doloribus mollitia tenetur hic?</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
 
           </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+    <!-- row for accordin -->
+    <div class="row">
+      <section class="accordion-section second-child clearfix mt-3 col" aria-label="Question Accordions">
+        <!-- <div class="container"> -->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default ">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+              <h4 class="panel-title">
+                <a class="collapsed text-success" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                  href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                  How to book a restaurant near by the landmark I am going to visit?
+                </a>
+              </h4>
+            </div>
+            <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+              <div class="panel-body px-3 mb-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae unde illo assumenda
+                  labore architecto quasi error, laborum illum molestias veritatis.</p>
+                <ul>
+                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi odit reprehenderit
+                    quae impedit eaque praesentium dignissimos. Atque nesciunt reprehenderit placeat
+                    totam molestias porro, nobis aliquid voluptatum molestiae non veritatis a.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima?</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum incidunt assumenda
+                    temporibus ut blanditiis iure!</li>
+                  <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, eius!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+              <h4 class="panel-title">
+                <a class="collapsed text-success" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                  href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  How to add a site or event on the platform?
+                </a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+              <div class="panel-body px-3 mb-4">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, repudiandae excepturi
+                  numquam placeat magni vero accusantium laudantium totam nostrum a et porro. Sapiente
+                  deleniti consequatur animi amet adipisci? Aspernatur, molestiae.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+              <h4 class="panel-title">
+                <a class="collapsed text-success" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                  href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                  How to pay the event I've booked?
+                </a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+              <div class="panel-body px-3 mb-4">
+                <p>U Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum soluta qui
+                  temporibus natus! Cupiditate commodi beatae consequuntur optio quidem..</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+              <h4 class="panel-title">
+                <a class="collapsed text-success" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                  href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                  Can I return my car in another place?
+                </a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+              <div class="panel-body px-3 mb-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi dolor quisquam illo
+                  a laborum eligendi doloribus mollitia tenetur hic? Lorem ipsum, dolor sit amet consectetur
+                  adipisicing
+                  elit. Animi sapiente tempore modi veniam error voluptatum maiores aliquam quia provident est?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- </div> -->
+      </section>
+    </div>
+
+
+    <!-- row for additional help information cards-->
+    <div class="row card-container d-flex ">
+
+      <!-- card1 -->
+      <div class="card col-md-4 mr-auto">
+        <div class="card-body">
+          <h5 class="card-title text-success"><i class="fas fas fa-mug-hot"></i> Micro-Services</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-success">View more</a>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="card col-md-4 mr-auto ">
+        <div class="card-body">
+          <h5 class="card-title text-success"><i class="fas fa-user "></i> My Account</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-success">View more</a>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="card col-md-4 mr-auto">
+        <div class="card-body">
+          <h5 class="card-title text-success"><i class="fas fa-headset"></i> Customer Service</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-success">View more</a>
+        </div>
+      </div>
+
+
+    </div>
+    <!--row for additional help information cards closes here-->
+
+
+
+
+
+
   </div>
-  </div>
+  <!-- Container closes here -->
 
 
 
 
+
+  <!-- footer starts here -->
 
   <hr class="mt-5">
   <footer class="container ">
