@@ -1,0 +1,61 @@
+:root {
+  --main-text-color: white;
+  --grey-text-color: grey;
+  --main-bg-color: ;
+  --header-bg-color: rgba(128, 128, 128, 0.8);
+  --footer-bg-color: #333;
+  --link-text-color: #1ebba3;
+  --rating-star-color: orange;
+  --dark-text-color: rgb(2, 36, 44);
+}
+
+body {
+  min-width: 575.98px;
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.event-pic img {
+  border-radius: 10px;
+}
+
+.event-detail .fa-tag {
+  margin-left: 0.5rem;
+}
+
+.event-detail .p-head {
+  font-weight: 600;
+}
+
+.rating-service {
+  grid-area: rating-service;
+}
+
+.recent-visit img {
+  height: 50px;
+}
+
+.event-rating {
+  color: var(--rating-star-color);
+}
+
+.tags {
+  color: var(--link-text-color);
+}
+
+/* for the carousel */
+
+.carousel-item {
+  text-align: center;
+  min-height: 380px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+
+.img-fluid{
+    height: 400px;
+}
