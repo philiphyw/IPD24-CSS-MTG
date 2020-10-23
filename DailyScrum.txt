@@ -9,6 +9,18 @@ Each member writes down answers to 3 questions in the following format:
 3. Where do I need assistance? What do I need to figure out?
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+
+2020/10/23 Edwin Li
+1. What I have done / not done since last Scrum?
+- migrate existing code to bootstrap
+2. What I plan to do from this scrum to next? (next 24 hours)?
+- responsive layout of search page (5 issues remained)
+- sightseeing page layout
+3. Where do I need assistance? What do I need to figure out?
+- to solve: fixed-top/left, left aside collapse, gallery wrap
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 2020/10/22 Andrey Lyamkin
 1. What I have done / not done since the last Scrum?
 - built modal for registration
@@ -19,7 +31,6 @@ Each member writes down answers to 3 questions in the following format:
 - assist colleagues with Bootstrap
 3. Where do I need assistance? What do I need to figure out?
 
-
 2020/10/22 Philip Huang
 1. What I have done / not done since the last Scrum?
 - Build bootstrap header for testing 
@@ -29,7 +40,6 @@ Each member writes down answers to 3 questions in the following format:
 - Build a FAQ page with bootstrap
 3. Where do I need assistance? What do I need to figure out?
 - Bootstrap tech support, espacillay on how to adjust the content to fit in bootstrap grid template.
-
 
 2020/10/22 Edwin Li
 1. What I have done / not done since last Scrum?
