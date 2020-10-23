@@ -10,6 +10,33 @@ Each member writes down answers to 3 questions in the following format:
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+2020/10/23 Andrey Lyamkin
+1. What I have done / not done since the last Scrum?
+- Assisted colleagues with Bootstrap
+- Modified footer and header
+- Outlined structure for main pages
+- Build modal for users who wants to share sightseeing information- not done
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Build reusable footer and header for the rest of the page
+- Assist colleagues with Bootstrap
+- Build page to send information about sightseeing for administration 
+3. Where do I need assistance? What do I need to figure out?
+
+
+2020/10/23 Philip Huang
+1. What I have done / not done since the last Scrum?
+- Build FAQ Page
+- Build event cards on event
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Apply the final header/footer to all current pages
+- Restructure the detail page layout
+- Adjust the color for FAQ
+- Integrate the event cards on the search page
+3. Where do I need assistance? What do I need to figure out?
+- control the height/width proterty for images in bootstrap carousel section
+
+
+
 2020/10/23 Edwin Li
 1. What I have done / not done since last Scrum?
 - migrate existing code to bootstrap
