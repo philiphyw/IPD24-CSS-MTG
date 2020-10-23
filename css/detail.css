@@ -4,7 +4,7 @@
   --main-bg-color: ;
   --header-bg-color: rgba(128, 128, 128, 0.8);
   --footer-bg-color: #333;
-  --link-text-color: #1ebba3;
+  --link-text-color: rgb(30, 187, 163);
   --rating-star-color: orange;
   --dark-text-color: rgb(2, 36, 44);
 }
@@ -53,10 +53,14 @@ body {
 .carousel-item {
   text-align: center;
   min-height: 380px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+  height: 400px
 }
 
 
-
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+}
 
 .carousel-text-bg{
  background: rgba(0,0,0,0.4);
@@ -65,4 +69,28 @@ body {
 
 .carousel-text{
   opacity: 1;
+}
+
+
+/* for the gallery */
+.gallery-item{
+  position: relative;
+  text-align: center;
+  min-height: 200px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+  height: 250px
+}
+
+.gallery-item img{
+  height: 100%;
+  width: 100%;
+}
+.gallery-caption{
+  position: absolute;
+  top: 0rem;
+  left:1rem;
+  background: rgba(30, 187, 163,1);
+ border-radius: 15px;
+ color: white;
+ padding:0 1rem;
+
 }
