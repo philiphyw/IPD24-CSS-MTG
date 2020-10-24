@@ -64,10 +64,45 @@
 }
 
 /* gallery style end */
+@media screen and (max-width: 768px) {
+  .filter-collapse {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px), (max-width: 460px) {
+  .filter-expand-sm {
+    display: none;
+  }
+}
+
+.filterItemHighlight-sm {
+  background-color: #cee4fd;
+  color: #616161;
+  border-radius: 5px;
+}
+
+.filterItem-sm {
+  color: #616161;
+}
+
+.filterItem-sm:hover {
+  background-color: #cee4fd;
+  border-radius: 5px;
+}
+
+.filterItem-sm a:link {
+  color: #616161;
+}
+
+.filterItem-sm a:visited {
+  color: #616161;
+}
+
 .asideBar {
-  background-color: #fcfcfc;
   -webkit-box-shadow: 5px 1px 5px 1px rgba(0, 0, 0, 0.02);
           box-shadow: 5px 1px 5px 1px rgba(0, 0, 0, 0.02);
+  height: 100%;
 }
 
 .asideBar .input-search {
