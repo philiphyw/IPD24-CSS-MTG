@@ -33,16 +33,24 @@
           </div>
         </div> 
       </nav>
-  
+      <nav class="navbar navbar-light bg-light filter-expand-sm">
+        <div class="container">
+          <div class="navbar-nav d-flex flex-row">
+            <h6><a href="#" class="nav-item nav-link filterItemHighlight-sm mr-2 pl-2"><i class="fas fa-globe"></i><span class="px-2">All</span></a></h6>
+            <h6><a href="search-sightseeing.html" class="nav-item nav-link filterItem-sm mr-2 pl-2"><i class="fas fa-eye"></i><span class="px-2">Sightseeing</span></a></h6>
+            <h6><a href="search-event.html" class="nav-item nav-link filterItem-sm mr-2 pl-2"><i class="fas fa-calendar-check"></i><span  class="px-2">Event</span></a></h6>
+            <h6><a href="search-service.html" class="nav-item nav-link filterItem-sm pl-2"><i class="fas fa-taxi"></i><span  class="px-2">Service</span></a></h6>
+          </div>
+        </div> 
+      </nav>
       <div class="container"> <!-- container of left filter bar, right search result and footer -->
         <div class="row">
-
-          <div class="col-md-4">
-            <div class="asideBar text-nowrap d-flex flex-column flex-nowrap align-items-start mr-3"> <!-- left aside filter bar-->
+          <div class="col-md-4 filter-collapse">
+            <div class="asideBar text-nowrap d-flex flex-column flex-nowrap align-items-start mr-3 bg-light"> <!-- left aside filter bar-->
               <h4 class="mt-3 mb-1 mr-5">Search Results for</h4>
               <form method="POST" action="#">
                 <div class="form-group">
-                  <input type="search" name="search" placeholder="Down Town" class="input-search form-control">
+                  <input type="search" name="search" placeholder="Down Town" class="input-search form-control bg-light">
                 </div>
               </form>
               <h4 class="mt-3"> Filter</h4>
@@ -55,8 +63,6 @@
               </nav>
             </div>
           </div>
-          
-
           <div class="col-md-8">
             <div class="gallary d-flex flex-row flex-wrap ml-2 mt-2">
               <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
@@ -197,7 +203,9 @@
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
+            <div class="container">wrapper</div>
+            <div class="container">wrapper</div>
           </div>
         </div>
         <hr>
@@ -214,7 +222,7 @@
             </div>
         </footer>
       </div>
-    
+
       <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
