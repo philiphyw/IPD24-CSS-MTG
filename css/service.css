@@ -1,0 +1,111 @@
+.service-post-board {
+  width: 100%;
+  height: 90%;
+}
+
+.service-post-board .handwritting {
+  font-family: "Indie Flower";
+}
+
+.service-post-board .rotate1 {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.service-post-board .rotate2 {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.service-post-board .move1 {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.service-post-board .move2 {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.service-post-board .serviceCardPink {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #d9387b;
+  margin: 10px;
+  padding: 10px;
+}
+
+.service-post-board .serviceCardOrange {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #e66d50;
+  margin: 10px;
+  padding: 10px;
+}
+
+.service-post-board .serviceCardBlue {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #0080d1;
+  margin: 10px;
+  padding: 10px;
+}
+
+.service-post-board .serviceCardGreen {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #44ab36;
+  margin: 10px;
+  padding: 10px;
+}
+
+.service-post-board .serviceCardYellow {
+  max-width: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: #dee72a;
+  margin: 10px;
+  padding: 10px;
+}
+
+.service-bg {
+  background-image: url("../img/serve.jpg");
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 35vh;
+  margin-left: -15px;
+}
+
+.section-headline {
+  background-color: #f1ece4;
+  opacity: 0.95;
+  -webkit-transform: translateY(-10vh);
+          transform: translateY(-10vh);
+}
+
+.service-wall {
+  background-image: url("../img/board.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 40vh;
+  margin-left: -15px;
+}
+
+.service-wall .board-caption {
+  -webkit-transform: translateY(-5vh);
+          transform: translateY(-5vh);
+}
+/*# sourceMappingURL=service.css.map */
