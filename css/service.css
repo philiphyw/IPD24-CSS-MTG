@@ -37,6 +37,14 @@
   padding: 10px;
 }
 
+.service-post-board .serviceCardPink:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 500ms ease 50ms;
+  transition: all 500ms ease 50ms;
+}
+
 .service-post-board .serviceCardOrange {
   max-width: 200px;
   max-height: 200px;
@@ -45,6 +53,14 @@
   background-color: #e66d50;
   margin: 10px;
   padding: 10px;
+}
+
+.service-post-board .serviceCardOrange:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 500ms ease 50ms;
+  transition: all 500ms ease 50ms;
 }
 
 .service-post-board .serviceCardBlue {
@@ -57,6 +73,14 @@
   padding: 10px;
 }
 
+.service-post-board .serviceCardBlue:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 500ms ease 50ms;
+  transition: all 500ms ease 50ms;
+}
+
 .service-post-board .serviceCardGreen {
   max-width: 200px;
   max-height: 200px;
@@ -67,6 +91,14 @@
   padding: 10px;
 }
 
+.service-post-board .serviceCardGreen:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 500ms ease 50ms;
+  transition: all 500ms ease 50ms;
+}
+
 .service-post-board .serviceCardYellow {
   max-width: 200px;
   max-height: 200px;
@@ -75,6 +107,14 @@
   background-color: #dee72a;
   margin: 10px;
   padding: 10px;
+}
+
+.service-post-board .serviceCardYellow:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+  -webkit-transition: all 500ms ease 50ms;
+  transition: all 500ms ease 50ms;
 }
 
 .service-bg {
@@ -107,5 +147,26 @@
 .service-wall .board-caption {
   -webkit-transform: translateY(-5vh);
           transform: translateY(-5vh);
+}
+
+.serviceCard {
+  position: relative;
+}
+
+.serviceCard .serviceTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  color: transparent;
+  width: 400px;
+  height: 400px;
+}
+
+.serviceCard:hover .serviceTitle {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  -webkit-transition: all 500ms ease 50ms;
+  transition: all 500ms ease 50ms;
 }
 /*# sourceMappingURL=service.css.map */
