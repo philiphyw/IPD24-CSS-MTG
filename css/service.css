@@ -134,6 +134,11 @@
           transform: translateY(-10vh);
 }
 
+.highlightedService {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
 .service-wall {
   background-image: url("../img/board.jpg");
   background-position: center;
@@ -151,6 +156,15 @@
 
 .serviceCard {
   position: relative;
+}
+
+.serviceCard .serviceRemark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(122, 122, 122, 0.295);
+  color: rgba(255, 255, 255, 0.911);
 }
 
 .serviceCard .serviceTitle {
