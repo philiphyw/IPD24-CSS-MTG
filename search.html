@@ -36,176 +36,444 @@
       <nav class="navbar navbar-light bg-light filter-expand-sm">
         <div class="container">
           <div class="navbar-nav d-flex flex-row">
-            <h6><a href="#" class="nav-item nav-link filterItemHighlight-sm mr-2 pl-2"><i class="fas fa-globe"></i><span class="px-2">All</span></a></h6>
-            <h6><a href="search-sightseeing.html" class="nav-item nav-link filterItem-sm mr-2 pl-2"><i class="fas fa-eye"></i><span class="px-2">Sightseeing</span></a></h6>
-            <h6><a href="search-event.html" class="nav-item nav-link filterItem-sm mr-2 pl-2"><i class="fas fa-calendar-check"></i><span  class="px-2">Event</span></a></h6>
-            <h6><a href="search-service.html" class="nav-item nav-link filterItem-sm pl-2"><i class="fas fa-taxi"></i><span  class="px-2">Service</span></a></h6>
+            <p class="nav-item pt-3">Filt by</p>
+            <div class="btn-group">
+              <button type="button" class="btn"><i class="fas fa-eye"></i></button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Natural</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Heritage</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Purposeful</label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn"><i class="fas fa-theater-masks"></i></button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Free of Charge</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Below $20</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Above $20</label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Center City</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">West Island</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">East Area</label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Music Event</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Exhibition</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Food</label>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn"><i class="fas fa-taxi"></i></button>
+              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Tour Guide</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Translation</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Car Rent</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Bike Rent</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Hotel</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Restaurant</label>
+                </div>
+                <div class="form-check mx-3">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">Charging</label>
+                </div>
+              </div>
+            </div>
           </div>
         </div> 
       </nav>
       <div class="container"> <!-- container of left filter bar, right search result and footer -->
         <div class="row">
           <div class="col-md-4 filter-collapse">
-            <div class="asideBar text-nowrap d-flex flex-column flex-nowrap align-items-start mr-3 bg-light"> <!-- left aside filter bar-->
-              <h4 class="mt-3 mb-1 mr-5">Search Results for</h4>
+            <div class="asideBar d-flex flex-column flex-nowrap align-items-start pl-3 bg-light"> <!-- left aside filter bar-->
+              <h5 class="mt-3 mb-1 mr-5">Search Results:</h5>
               <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="search" name="search" placeholder="Down Town" class="input-search form-control bg-light">
+                <div class="form-group form-group-sm mx-1">
+                  <input type="search" name="search" placeholder="SEARCH" class="input-search form-control bg-light">
                 </div>
               </form>
-              <h4 class="mt-3"> Filter</h4>
-              <nav class="nav nav-pills flex-column">
-                <h5><a class="nav-item nav-link filterItemHighlight" href="#"><i class="fas fa-globe"></i><span class="pl-4">All</span></a></h5>
-                <h5><a class="nav-item nav-link filterItem" href="search-sightseeing.html"><i class="fas fa-eye"></i><span class="pl-4">Sightseeing</span></a></h5>
-                <h5><a class="nav-item nav-link filterItem" href="search-event.html"><i class="fas fa-calendar-check"></i><span  class="pl-4">Event</span></a></h5>
-                <h5><a class="nav-item nav-link filterItem" href="search-service.html"><i class="fas fa-taxi"></i><span  class="pl-4">Service</span></a></h5>
-                <h5><a class="nav-item nav-link filterItem" href="search-frdgrp.html"><i class="fas fa-user-friends"></i><span  class="pl-4">Friends</span></a></h5>
-              </nav>
+              <h5 class="mt-3"> Filter</h5>
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-eye"></i><span class="pl-4">Sightseeing</span>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-check mx-3">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Natural</label>
+                        </div>
+                        <div class="form-check mx-3">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Heritage</label>
+                        </div>
+                        <div class="form-check mx-3">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">Purposeful</label>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="form-check mx-3">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                        </div>
+                        <div class="form-check mx-3">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                        </div>
+                        <div class="form-check mx-3">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></label>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fas fa-theater-masks"></i><span class="pl-4">Event</span>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Free</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Below $20</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Above $20</label>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Center City</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">West Island</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">East Area</label>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Music Event</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Exhibition</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Food</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fas fa-taxi"></i><span class="pl-4">Service</span>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Tour Guide</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Translation</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Car Rent</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Bike Rent</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Hotel</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Restaurant</label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Charging</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-8">
-            <div class="gallary d-flex flex-row flex-wrap ml-2 mt-2">
-              <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
-                <div class="sightseeingImage">
-                  <img src="img/old-montreal.jpg" alt="Old Montreal">
+            <div class="searResultWrapper d-flex flex-column align-items-start">
+              <div class="gallary d-flex flex-row flex-wrap ml-2 mt-2"><!--sightseeing-->
+                <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-3 mb-3">
+                  <div class="sightseeingImage">
+                    <img src="img/old-montreal.jpg" alt="Old Montreal">
+                  </div>
+                  <div class="sightseeingFooter container">
+                    <div class="sightseeingTitle row">
+                      <div class="sightseeingName col-8"><h5>Old Montreal</h5></div>
+                      <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 128</div>
+                    </div>
+                    <div class="sightseeingRating row">
+                      <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                      <div class="sightseeingRateNumber col-5"><p>5562 rates</p></div>
+                    </div>
+                    <div class="sightseeingService row">
+                      <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
+                    </div>
+                  </div>
+                </div>            
+                <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
+                  <div class="sightseeingImage">
+                    <img src="img/fine-arts-museum.jpg" alt="Fine Arts Museum">
+                  </div>
+                  <div class="sightseeingFooter container">
+                    <div class="sightseeingTitle row">
+                      <div class="sightseeingName col-8"><h5>Fine Arts Museum</h5></div>
+                      <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 235</div>
+                    </div>
+                    <div class="sightseeingRating row">
+                      <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                      <div class="sightseeingRateNumber col-5"><p>3970 rates</p></div>
+                    </div>
+                    <div class="sightseeingService row">
+                      <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
+                    </div>
+                  </div>
                 </div>
-                <div class="sightseeingFooter container">
-                  <div class="sightseeingTitle row">
-                    <div class="sightseeingName col-8"><h5>Old Montreal</h5></div>
-                    <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 128</div>
-                  </div>
-                  <div class="sightseeingRating row">
-                    <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                    <div class="sightseeingRateNumber col-5"><p>5562 rates</p></div>
-                  </div>
-                  <div class="sightseeingService row">
-                    <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
-                  </div>
+  <!--          <div class="d-flex flex-column flex-nowrap mini-wrapper">
+                <div class="sightseeingCard-mini  flex-column flex-nowrap justify-content-start align-items-start mr-3 mb-3 ">
+                  <div class="sightseeingImage-mini"><img src="img/fine-arts-museum-mini.jpg" alt="Fine Arts Museum"></div>
+                  <div class="sightseeingName-mini mx-2"><p>Fine Arts Museum</p></div>
                 </div>
-              </div>
-              <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
-                <div class="sightseeingImage">
-                  <img src="img/fine-arts-museum.jpg" alt="Fine Arts Museum">
-                </div>
-                <div class="sightseeingFooter container">
-                  <div class="sightseeingTitle row">
-                    <div class="sightseeingName col-8"><h5>Fine Arts Museum</h5></div>
-                    <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 235</div>
-                  </div>
-                  <div class="sightseeingRating row">
-                    <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                    <div class="sightseeingRateNumber col-5"><p>3970 rates</p></div>
-                  </div>
-                  <div class="sightseeingService row">
-                    <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
-                <div class="sightseeingImage">
-                  <img src="img/notre-dame.jpg" alt="Notre Dame">
-                </div>
-                <div class="sightseeingFooter container">
-                  <div class="sightseeingTitle row">
-                    <div class="sightseeingName col-8"><h5>Notre Dame</h5></div>
-                    <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 128</div>
-                  </div>
-                  <div class="sightseeingRating row">
-                    <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                    <div class="sightseeingRateNumber col-5"><p>3892 rates</p></div>
-                  </div>
-                  <div class="sightseeingService row">
-                    <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
-                    <div class="serviceItemGray col-1"><i class="fas fa-charging-station"></i></div>
-                  </div>
+                <div class="sightseeingCard-mini  flex-column flex-nowrap justify-content-start align-items-start mr-3 mb-3 ">
+                  <div class="sightseeingImage-mini"><img src="img/fine-arts-museum-mini.jpg" alt="Fine Arts Museum"></div>
+                  <div class="sightseeingName-mini mx-2"><p>Fine Arts Museum</p></div>
                 </div>
               </div>
-              <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
-                <div class="sightseeingImage">
-                  <img src="img/la-rond.jpg" alt="La Rond">
+              <div class="d-flex flex-column flex-nowrap mini-wrapper">
+                <div class="sightseeingCard-mini  flex-column flex-nowrap justify-content-start align-items-start mr-3 mb-3 ">
+                  <div class="sightseeingImage-mini"><img src="img/fine-arts-museum-mini.jpg" alt="Fine Arts Museum"></div>
+                  <div class="sightseeingName-mini mx-2"><p>Fine Arts Museum</p></div>
                 </div>
-                <div class="sightseeingFooter container">
-                  <div class="sightseeingTitle row">
-                    <div class="sightseeingName col-8"><h5>La Rond</h5></div>
-                    <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 459</div>
+                <div class="sightseeingCard-mini  flex-column flex-nowrap justify-content-start align-items-start mr-3 mb-3 ">
+                  <div class="sightseeingImage-mini"><img src="img/fine-arts-museum-mini.jpg" alt="Fine Arts Museum"></div>
+                  <div class="sightseeingName-mini mx-2"><p>Fine Arts Museum</p></div>
+                </div>
+              </div> -->
+
+  <!--
+                <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
+                  <div class="sightseeingImage">
+                    <img src="img/notre-dame.jpg" alt="Notre Dame">
                   </div>
-                  <div class="sightseeingRating row">
-                    <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star-half"></i></div>
-                    <div class="sightseeingRateNumber col-5"><p>2351 rates</p></div>
-                  </div>
-                  <div class="sightseeingService row">
-                    <div class="serviceItemGray col-1 ml-1"><i class="fas fa-language"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
-                    <div class="serviceItemGray col-1"><i class="fas fa-bed"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
+                  <div class="sightseeingFooter container">
+                    <div class="sightseeingTitle row">
+                      <div class="sightseeingName col-8"><h5>Notre Dame</h5></div>
+                      <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 128</div>
+                    </div>
+                    <div class="sightseeingRating row">
+                      <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                      <div class="sightseeingRateNumber col-5"><p>3892 rates</p></div>
+                    </div>
+                    <div class="sightseeingService row">
+                      <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
+                      <div class="serviceItemGray col-1"><i class="fas fa-charging-station"></i></div>
+                    </div>
                   </div>
                 </div>
+                <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
+                  <div class="sightseeingImage">
+                    <img src="img/la-rond.jpg" alt="La Rond">
+                  </div>
+                  <div class="sightseeingFooter container">
+                    <div class="sightseeingTitle row">
+                      <div class="sightseeingName col-8"><h5>La Rond</h5></div>
+                      <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 459</div>
+                    </div>
+                    <div class="sightseeingRating row">
+                      <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star-half"></i></div>
+                      <div class="sightseeingRateNumber col-5"><p>2351 rates</p></div>
+                    </div>
+                    <div class="sightseeingService row">
+                      <div class="serviceItemGray col-1 ml-1"><i class="fas fa-language"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
+                      <div class="serviceItemGray col-1"><i class="fas fa-bed"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
+                  <div class="sightseeingImage">
+                    <img src="img/montreal-biodome.jpg" alt="Biodome">
+                  </div>
+                  <div class="sightseeingFooter container">
+                    <div class="sightseeingTitle row">
+                      <div class="sightseeingName col-8"><h5>Biodome</h5></div>
+                      <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 621</div>
+                    </div>
+                    <div class="sightseeingRating row">
+                      <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      <div class="sightseeingRateNumber col-5"><p>2162 rates</p></div>
+                    </div>
+                    <div class="sightseeingService row">
+                      <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
+                  <div class="sightseeingImage">
+                    <img src="img/chinatown.jpg" alt="China Town">
+                  </div>
+                  <div class="sightseeingFooter container">
+                    <div class="sightseeingTitle row">
+                      <div class="sightseeingName col-8"><h5>China Town</h5></div>
+                      <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 102</div>
+                    </div>
+                    <div class="sightseeingRating row">
+                      <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                      <div class="sightseeingRateNumber col-5"><p>1215 rates</p></div>
+                    </div>
+                    <div class="sightseeingService row">
+                      <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
+                      <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
+                    </div>
+                  </div>
+                </div>
+  -->
               </div>
-              <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
-                <div class="sightseeingImage">
-                  <img src="img/montreal-biodome.jpg" alt="Biodome">
-                </div>
-                <div class="sightseeingFooter container">
-                  <div class="sightseeingTitle row">
-                    <div class="sightseeingName col-8"><h5>Biodome</h5></div>
-                    <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 621</div>
-                  </div>
-                  <div class="sightseeingRating row">
-                    <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <div class="sightseeingRateNumber col-5"><p>2162 rates</p></div>
-                  </div>
-                  <div class="sightseeingService row">
-                    <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
-                  </div>
-                </div>
-              </div>
-              <div class="sightseeingCard flex-column flex-nowrap justify-content-start align-items-start mr-2 mb-2">
-                <div class="sightseeingImage">
-                  <img src="img/chinatown.jpg" alt="China Town">
-                </div>
-                <div class="sightseeingFooter container">
-                  <div class="sightseeingTitle row">
-                    <div class="sightseeingName col-8"><h5>China Town</h5></div>
-                    <div class="sightseeingVideo col-4"><i class="fas fa-photo-video"></i> 102</div>
-                  </div>
-                  <div class="sightseeingRating row">
-                    <div class="sightseeingRates col-7"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                    <div class="sightseeingRateNumber col-5"><p>1215 rates</p></div>
-                  </div>
-                  <div class="sightseeingService row">
-                    <div class="serviceItem col-1 ml-1"><i class="fas fa-language"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-car"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bicycle"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-bed"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-utensils"></i></div>
-                    <div class="serviceItem col-1"><i class="fas fa-charging-station"></i></div>
-                  </div>
-                </div>
-              </div>
+              <button type="button" class="btn btn-outline-primary seeMore">More Sightseeing &gt;</button>                
             </div>
-            <div class="container">wrapper</div>
-            <div class="container">wrapper</div>
+            
+            <div class="searResultWrapper d-flex flex-column align-items-start"> <!--event-->
+              <button type="button" class="btn btn-outline-primary seeMore">More Events &gt;</button> 
+            </div>
+            <div class="searResultWrapper d-flex flex-column align-items-start"><!--service-->
+              <button type="button" class="btn btn-outline-primary seeMore">More Micro-Services &gt;</button> 
+            </div>
           </div>
         </div>
         <hr>
