@@ -107,3 +107,6 @@
 .text-custom {
     color: #1ebba3;
 }
+.dropdown a {
+    text-transform: none;
+}
