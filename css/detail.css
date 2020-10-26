@@ -77,7 +77,7 @@ body {
   position: relative;
   text-align: center;
   min-height: 200px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-  height: 250px
+  /* height: 250px */
 }
 
 .gallery-item img{

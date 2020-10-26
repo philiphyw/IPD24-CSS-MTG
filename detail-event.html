@@ -19,39 +19,55 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 
+    <link rel="stylesheet" href="components/css/headerFooter.css">
 </head>
 
 <body>
 
-    <!-- the header/top bar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand mr-3">MTM</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">Micro-services</a>
-                    <a href="#" class="nav-item nav-link">Search</a>
-                    <a href="#" class="nav-item nav-link active">Detail</a>
-                    <a href="#" class="nav-item nav-link">About</a>
-                    <a href="#" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link">Register</a>
-                    <a href="#" class="nav-item nav-link">Login</a>
+    <!-- HEADER -->
+    <div class="header">
+        <nav class="container-fluid py-2 bg-dark navbar-dark">
+            <div class="row justify-content-between align-items-center">
+                <a href="index.html" class="link-reset text-custom h2">MTG</a>
+                <div class="nav-menu d-flex justify-content-between align-items-center">
+                    <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post"
+                        class="form-inline mr-4 d-none d-md-block ">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-secondary"><i
+                                        class="fa fa-search text-custom"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="#" class="link-reset mr-4 text-uppercase" role="button"><i
+                            class="far fa-comment-dots"></i><span class="d-none d-sm-inline">need help?</span></a>
+                    <a href="#" class="link-reset mr-4 text-uppercase" role="button"><i class="fas fa-globe"></i><span
+                            class="d-none d-sm-inline">fr</span></a>
+                    <a href="#modal_login" class="link-reset text-uppercase" role="button" data-toggle="modal"><i
+                            class="fas fa-sign-in-alt"></i><span class="d-none d-sm-inline">log in</span></a>
                 </div>
             </div>
+        </nav>
+        <div class="col-12 my-1">
+            <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post"
+                class="form-inline d-md-none">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary"><i
+                                class="fa fa-search text-custom"></i></button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </nav>
-
+    </div>
+    <!-- End HEADER -->
 
     <div class="container">
         <!-- the title -->
         <div class="row">
-            <h1 class="col text-center mb-5">Montreal Food Festival</h1>
+             <h1 class="col text-center mb-5">Montreal Food Festival</h1>
         </div>
 
         <!-- the row which contains pic description rating and microservice -->
@@ -70,8 +86,9 @@
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href=""> <img src="https://cultmtl.com/wp-content/uploads/2018/09/Country-feast-1.jpg" class="img-fluid"
-                                        alt=""></a>
+                                <a href=""> <img
+                                        src="https://cultmtl.com/wp-content/uploads/2018/09/Country-feast-1.jpg"
+                                        class="img-fluid" alt=""></a>
                                 <div class="carousel-caption d-none d-md-block text-whit carousel-text-bg px-2">
                                     <!-- <h5 class="carousel-text">from John Doe</h5> -->
                                     <p class="carousel-text text-left"><cite>"Lorem ipsum dolor sit amet, consectetur
@@ -90,8 +107,9 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <a href=""> <img src="https://www.oldportofmontreal.com/sites/default/files/styles/facebook/public/2019-07/img_5912.jpg?itok=GTqFlnwr" class="img-fluid"
-                                        alt="sainte-helene"></a>
+                                <a href=""> <img
+                                        src="https://www.oldportofmontreal.com/sites/default/files/styles/facebook/public/2019-07/img_5912.jpg?itok=GTqFlnwr"
+                                        class="img-fluid" alt="sainte-helene"></a>
                                 <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
                                     <!-- <h5 class="carousel-text">Ile Sainte-Helene</h5> -->
                                     <p class="carousel-text text-left"><cite>"Lorem ipsum, dolor sit amet consectetur
@@ -109,8 +127,9 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <a href=""> <img src="https://livemtl.ca/blog/articlesimages/display/bd0/0dc/1e84fa920254d20f79b2b7f884/asian-street-LiveMtl-ca.jpg" class="img-fluid"
-                                        alt=""></a>
+                                <a href=""> <img
+                                        src="https://livemtl.ca/blog/articlesimages/display/bd0/0dc/1e84fa920254d20f79b2b7f884/asian-street-LiveMtl-ca.jpg"
+                                        class="img-fluid" alt=""></a>
 
                                 <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
                                     <p class="carousel-text text-left"><cite>"Cnsectetur adipisicing elit.
@@ -149,7 +168,7 @@
                 </div>
 
 
-                <!-- the addess/description/funfact -->
+                <!-- the addess/description/fee -->
                 <div class="row">
                     <div class="event-description mt-2 col">
                         <p><span class="p-head">Address: </span><span class="p-content">Lorem ipsum dolor sit amet
@@ -158,7 +177,7 @@
                                 consectetur adipisicing elit. Iusto voluptates ducimus eius ullam. Lorem ipsum, dolor
                                 sit
                                 amet consectetur adipisicing elit. Quasi, at? </span></p>
-                        <p><span class="p-head">Fun Facts: </span><span class="p-content">Lorem ipsum ing elit. Quasi
+                        <p><span class="p-head">Fee: </span><span class="p-content"> <em><del class="text-muted">45.99</del></em> <span class="text-primary"><strong>$37.99</strong>/Person</span>
                             </span></p>
                     </div>
                 </div>
@@ -192,12 +211,12 @@
                         <span class="p-head">Who visit here recently:</span>
                     </p>
                     <p>
-                        <img src="img/user1.png" alt="user1">
-                        <img src="img/user2.png" alt="user2">
-                        <img src="img/user3.png" alt="user3">
-                        <img src="img/user4.png" alt="user4">
-                        <img src="img/user5.png" alt="user5">
-                        <img src="img/user6.png" alt="user6">
+                        <img src="img/user1.png" class="rounded-circle" alt="user1">
+                        <img src="img/user2.png" class="rounded-circle" alt="user2">
+                        <img src="img/user3.png" class="rounded-circle" alt="user3">
+                        <img src="img/user4.png" class="rounded-circle" alt="user4">
+                        <img src="img/user5.png" class="rounded-circle" alt="user5">
+                        <img src="img/user6.png" class="rounded-circle" alt="user6">
 
                     </p>
                 </div>
@@ -206,7 +225,7 @@
                     <p><a href="" class="p-head"><i class="fas fa-car"></i> Rend a car</a></p>
                     <p><a href="" class="p-head"><i class="fas fa-biking"></i> Rend a bike</a></p>
                     <p><a href="" class="p-head"><i class="fas fa-bed"></i> Book a Hotel</a></p>
-                          </a></p>
+                    </a></p>
 
                 </div>
             </div>
@@ -219,70 +238,72 @@
         <!-- row for Recommended events -->
         <div class="row mt-5">
             <div class="col-md-12">
-            <div class="row">
-                <h3 class="col">Recommended events</h4>
-            </div>
-              <div id="mdb-lightbox-ui"></div>
-          
-              <div class="mdb-lightbox no-margin">
                 <div class="row">
-                <figure class="col-md-6 col-lg-4 gallery-item">
-                  <a href="#">
-                    <img alt="picture" src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/06/c4/00/cartoline-da-montreal.jpg"
-                      class="img-fluid">
-                      <span class="gallery-caption">Cathédrale Christ Church</span>
-                  </a>
-                </figure>
-          
-                <figure class="col-md-6 col-lg-4 gallery-item">
-                  <a href="#">
-                    <img alt="picture" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Church_of_St._Michael_and_St._Anthony.jpg"
-                      class="img-fluid" />
-                      <span class="gallery-caption">Church of St. Michael and St. Anthony</span>
-                  </a>
-                </figure>
-          
-                <figure class="col-md-6 col-lg-4 gallery-item">
-                  <a href="#">
-                    <img alt="picture" src="https://medias.quartierdesspectacles.com/import/vitrine/location/16/16.jpg"
-                      class="img-fluid" />
-                      <span class="gallery-caption">St. James United Church</span>
-                  </a>
-                </figure>
+                    <h3 class="col">Recommended events</h4>
+                </div>
+                <div id="mdb-lightbox-ui"></div>
+
+                <div class="mdb-lightbox no-margin">
+                    <div class="row">
+                        <figure class="col-md-6 col-lg-4 gallery-item">
+                            <a href="#">
+                                <img alt="picture"
+                                    src="https://www.montrealstays.com/wp-content/uploads/2015/01/Untitled-design-21.png"
+                                    class="img-fluid">
+                                <span class="gallery-caption">Ski</span>
+                            </a>
+                        </figure>
+
+                        <figure class="col-md-6 col-lg-4 gallery-item">
+                            <a href="#">
+                                <img alt="picture"
+                                    src="https://images.immediate.co.uk/production/volatile/sites/21/2019/03/tomtom-1501598547896-ylic7l22ht2l-9f277cf.jpg?quality=90&resize=768,574"
+                                    class="img-fluid" />
+                                <span class="gallery-caption">Mountain Biking</span>
+                            </a>
+                        </figure>
+
+                        <figure class="col-md-6 col-lg-4 gallery-item">
+                            <a href="#">
+                                <img alt="picture"
+                                    src="https://www.mtlarabais.com/wp-content/uploads/2018/05/4115_WET_SET_MTL_003.jpg"
+                                    class="img-fluid" />
+                                <span class="gallery-caption">Jet Ski</span>
+                            </a>
+                        </figure>
+                        <figure class="col-md-6 col-lg-4 gallery-item">
+                            <a href="#">
+                                <img alt="picture" src="https://s.wsj.net/public/resources/images/B3-CL543_PARADE_M_20181122132111.jpg"
+                                    class="img-fluid" />
+                                <span class="gallery-caption">Santa Claus Parade</span>
+                            </a>
+                        </figure>
+
+                        <figure class="col-md-6 col-lg-4 gallery-item">
+                            <a href="#">
+                                <img alt="picture"
+                                    src="https://media.timeout.com/images/105461834/image.jpg"
+                                    class="img-fluid" />
+                                <span class="gallery-caption">Music Festival</span>
+                            </a>
+                        </figure>
+
+                        <figure class="col-md-6 col-lg-4 gallery-item">
+                            <a href="#">
+                                <img alt="picture"
+                                    src="https://cdn.cogecolive.com/prod-20191227/article_1577463884040201_1080x608.jpeg"
+                                    class="img-fluid" />
+                                <span class="gallery-caption">Fireworks</span>
+                            </a>
+                        </figure>
+                    </div>
+
+
+
+                </div>
+
             </div>
-            <!-- first row of the gallery close here-->
-            <div class="row">
-                <figure class="col-md-6 col-lg-4 gallery-item">
-                  <a href="#">
-                    <img alt="picture" src="https://www.bonjourquebec.com/en/listing/images/800x600/52e3a2a6-d704-4880-9104-7c67b9fc26ff/old-port-of-montreal-bateau.jpg"
-                      class="img-fluid" />
-                      <span class="gallery-caption">Old Port</span>
-                  </a>
-                </figure>
-          
-                <figure class="col-md-6 col-lg-4 gallery-item">
-                  <a href="#">
-                    <img alt="picture" src="https://allthatsinteresting.com/wordpress/wp-content/uploads/2014/08/japanese-garden-montreal.jpg"
-                      class="img-fluid" />
-                      <span class="gallery-caption">Botanical Garden</span>
-                  </a>
-                </figure>
-          
-                <figure class="col-md-6 col-lg-4 gallery-item">
-                  <a href="#">
-                    <img alt="picture" src="https://youimg1.c-ctrip.com/target/100f1f000001gqags20BC.jpg?proc=source%2Ftrip"
-                      class="img-fluid" />
-                      <span class="gallery-caption">Montreal City Hall</span>
-                  </a>
-                </figure>
-            </div>
-            <!-- second row of the gallery close here-->
-          
-         
-              </div>
-          
-            </div>
-          </div>
+        </div>
 
 
 
@@ -301,30 +322,158 @@
 
 
     <!-- the row contains footer -->
-    <div class="row">
-
-        <footer class="container ">
+    <!-- FOOTER -->
+    <footer class="footer bg-dark pt-5">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
-                    <p>Copyright &copy; 2020 Montreal Travelling Guide</p>
+                <div class="col-md-4 col-sm-6">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-6 text-md-right">
-                    <a href="#" class="text-dark">Terms of Use</a>
-                    <span class="text-muted mx-2">|</span>
-                    <a href="#" class="text-dark">Privacy Policy</a>
+                <div class="col-md-4 col-sm-6">
+                    <ul>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 d-flex align-items-end justify-content-center">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="row div-border-top copyrights mt-4 py-4">
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <p class="text-white ml-auto">
+                        &copy;2020 Motreal Travelling Guide
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MODAL REGISTRATION WINDOWS -->
+    <!-- Login modal -->
+    <div class="modal_section">
+        <div id="modal_login" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Lon in</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="col-form-label" for="login_emailInput">Email</label>
+                                        <input id="login_emailInput" name="login_emailInput" type="email"
+                                            class="form-control form-control-custom" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="col-form-label" for="login_passInput">Password</label>
+                                        <input id="login_passInput" name="login_passInput" type="password"
+                                            class="form-control form-control-custom" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pl-3">
+                                <div class="col_12">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="login_rememberMe"
+                                            name="login_rememberMe">
+                                        <label class="form-check-label" for="login_rememberMe">Remember Me</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn text-custom" href="#modal_register" data-dismiss="modal" role="button"
+                                data-toggle="modal">Register</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-custom">Log in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-
+    <!-- Register modal -->
+    <div class="modal_section">
+        <div id="modal_register" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="register_fNameInput">First Name</label>
+                                        <input type="text" class="form-control form-control-custom"
+                                            id="register_fNameInput" name="register_fNameInput" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="register_lNameInput">Last Name</label>
+                                        <input type="text" class="form-control form-control-custom"
+                                            id="register_lNameInput" name="register_lNameInput" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="col-form-label" for="register_emailInput">Email</label>
+                                        <input type="email" class="form-control form-control-custom"
+                                            id="register_emailInput" name="register_emailInput" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="col-form-label" for="register_passInput">Password</label>
+                                        <input type="password" class="form-control form-control-custom"
+                                            id="register_passInput" name="register_passInput" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-custom">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-
-
-
+    <!-- Send information modals -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
