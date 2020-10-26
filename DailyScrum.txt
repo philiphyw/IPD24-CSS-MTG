@@ -17,8 +17,8 @@ Each member writes down answers to 3 questions in the following format:
 - Finished merge header/footder to FAQ, Search-Event, Detail-Event, Detail-Sightseeing pages.
 
 2. What I plan to do from this scrum to next(next 24 hours)?:
-- Build the linkage between pages
-- Update the need-help button link to FAQ page
+- Build the linkage between detail-event and detail-sightseeing pages
+- Adjust the filter on search-event page.
 
 3. Where do I need assistance? What do I need to figure out?
 
