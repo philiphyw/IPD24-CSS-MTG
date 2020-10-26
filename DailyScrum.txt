@@ -10,6 +10,24 @@ Each member writes down answers to 3 questions in the following format:
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+2020/10/26 Edwin Li
+1. What I have done / not done since last Scrum?
+- the first version of service page
+- the first version of video page (mainly focus on tech verification)
+- filter collapse of search page
+- dropdown effect of filter side bar
+- debug the search page on the page blank and wrap issue
+2. What I plan to do from this scrum to next? (next 24 hours)?
+- merge event card into search page
+- implement service card and merge with search page
+- header / footer merging
+- link of more button of service page for hotel, car rental and restaurant
+- link of load more button of video page
+- search input on header
+3. Where do I need assistance? What do I need to figure out?
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 2020/10/23 Andrey Lyamkin
 1. What I have done / not done since the last Scrum?
 - Assisted colleagues with Bootstrap
