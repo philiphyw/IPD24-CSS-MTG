@@ -40,6 +40,16 @@ Each member writes down answers to 3 questions in the following format:
 - search input on header
 3. Where do I need assistance? What do I need to figure out?
 
+2020/10/26 Andrey Lyamkin
+1. What I have done / not done since last Scrum?
+- Built reusable footer and header for the rest of the pages
+- Assisted colleagues with Bootstrap
+- Built page to send information about sightseeing for administration - not done
+- Built responsivness of the landing page
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Build page to send information about sightseeing for administration
+3. Where do I need assistance? What do I need to figure out?
+
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 2020/10/23 Andrey Lyamkin
