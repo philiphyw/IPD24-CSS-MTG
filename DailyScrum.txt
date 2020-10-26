@@ -36,7 +36,7 @@ Each member writes down answers to 3 questions in the following format:
 - implement service card and merge with search page
 - header / footer merging
 - link of more button of service page for hotel, car rental and restaurant
-- link of load more button of video page
+- link of load more button of video page (or a link of 'see more')
 - search input on header
 3. Where do I need assistance? What do I need to figure out?
 
