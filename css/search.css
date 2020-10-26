@@ -63,6 +63,33 @@
   color: #818181;
 }
 
+.gallary .serviceCard {
+  background-color: #ffffff;
+  width: 220px;
+  height: 240px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.18);
+          box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.18);
+}
+
+.gallary .serviceCard .serviceBrand img {
+  margin: 10px 5px 5px;
+  background-color: white;
+}
+
+.gallary .serviceCard .serviceFooter .serviceTitle .serviceName {
+  color: #414141;
+}
+
+.gallary .serviceCard .serviceFooter .serviceRating .serviceRates {
+  color: #ffc400;
+}
+
+.gallary .serviceCard .serviceFooter .serviceRating .serviceRateNumber:hover {
+  color: #3085e6;
+  cursor: pointer;
+}
+
 .gallary .mini-wrapper-lg,
 .gallary .mini-wrapper-md {
   width: 160px;
