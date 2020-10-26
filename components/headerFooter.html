@@ -11,37 +11,38 @@
     <body>
     <!-- HEADER -->
         <div class="header">
-            <nav class="container-fluid py-2 bg-dark navbar-dark">         
-                <div class="row justify-content-between align-items-center">
-                    <a href="index.html" class="link-reset text-custom h2">MTG</a>
-                    <div class="nav-menu d-flex justify-content-between align-items-center">
-                        <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post" class="form-inline mr-4 d-none d-md-block ">
-                            <div class="input-group">                    
-                                <input type="text" class="form-control" placeholder="Search" name="search">
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-secondary"><i class="fa fa-search text-custom"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                        <a href="#" class="link-reset mr-4 text-uppercase" role="button"><i class="far fa-comment-dots"></i><span class="d-none d-sm-inline">need help?</span></a>
-                        <a href="#" class="link-reset mr-4 text-uppercase" role="button"><i class="fas fa-globe"></i><span class="d-none d-sm-inline">fr</span></a>
-                        <a href="#modal_login" class="link-reset text-uppercase" role="button" data-toggle="modal"><i class="fas fa-sign-in-alt"></i><span class="d-none d-sm-inline">log in</span></a>
-                    </div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a href="index.html" class="link-reset text-custom"><span class="brand">MTG</span></a>
+                <button class="navbar-toggler text-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-reset" role="button"><span>attractions</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" role="button"><span>events</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" role="button"><span>services</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link" role="button"><i class="far fa-comment-dots"></i><span>need help?</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" role="button"><i class="fas fa-globe"></i><span>fr</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#modal_login" class="nav-link" role="button" data-toggle="modal"><i class="fas fa-user"></i><span>User</span></a>
+                    </li>
+                  </ul>
+                 
                 </div>
-            </nav>
-            <div class="col-12 my-1">
-                <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post" class="form-inline d-md-none">
-                    <div class="input-group">                    
-                        <input type="text" class="form-control" placeholder="Search" name="search">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-secondary"><i class="fa fa-search text-custom"></i></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        
-        
+              </nav>
+            
+        </div> 
     <br>
     <br>
     <!-- FOOTER -->
@@ -95,7 +96,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title">Lon in</h5>
+                            <h5 class="modal-title">Log in</h5>
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
