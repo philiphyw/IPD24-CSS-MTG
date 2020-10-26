@@ -18,6 +18,7 @@ Each member writes down answers to 3 questions in the following format:
 
 2. What I plan to do from this scrum to next(next 24 hours)?:
 - Build the linkage between detail-event and detail-sightseeing pages
+- Build a detail-service page(the profile of a supplier/partner)
 - Adjust the filter on search-event page.
 
 3. Where do I need assistance? What do I need to figure out?
