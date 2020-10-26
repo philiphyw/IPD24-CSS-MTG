@@ -80,9 +80,7 @@
 .nav-menu a {
     text-transform: uppercase;
 }
-.navbar-toggler {
-    color: #1ebba3;
-}
+
 .btn-custom,
 .btn-custom:link,
 .btn-custom:visited {
@@ -109,4 +107,9 @@
 }
 .dropdown a {
     text-transform: none;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1ebba3;
 }
