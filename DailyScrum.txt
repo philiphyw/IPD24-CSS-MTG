@@ -9,21 +9,23 @@ Each member writes down answers to 3 questions in the following format:
 3. Where do I need assistance? What do I need to figure out?
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+2020/10/26 Andrey Lyamkin
+1. What I have done / not done since last Scrum?
+-...
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- header template (for all to update)
+- user page (including user admin)
 
 2020/10/26 Philip Huang
 1. What I have done / not done since the last Scrum?
 - Built Search-Event, Detail-Event page
 - Restructred the FAQ page
 - Finished merge header/footder to FAQ, Search-Event, Detail-Event, Detail-Sightseeing pages.
-
 2. What I plan to do from this scrum to next(next 24 hours)?:
 - Build the linkage between detail-event and detail-sightseeing pages
 - Build a detail-service page(the profile of a supplier/partner)
 - Adjust the filter on search-event page.
-
 3. Where do I need assistance? What do I need to figure out?
-
-
 
 2020/10/26 Edwin Li
 1. What I have done / not done since last Scrum?
@@ -33,12 +35,8 @@ Each member writes down answers to 3 questions in the following format:
 - dropdown effect of filter side bar
 - debug the search page on the page blank and wrap issue
 2. What I plan to do from this scrum to next? (next 24 hours)?
-- merge event card into search page
-- implement service card and merge with search page
-- header / footer merging
-- link of more button of service page for hotel, car rental and restaurant
-- link of load more button of video page (or a link of 'see more')
-- search input on header
+- implement service search page
+- implement sightseeing search page
 3. Where do I need assistance? What do I need to figure out?
 
 2020/10/26 Andrey Lyamkin
