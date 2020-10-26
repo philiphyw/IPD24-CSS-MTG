@@ -10,6 +10,20 @@ Each member writes down answers to 3 questions in the following format:
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+2020/10/26 Philip Huang
+1. What I have done / not done since the last Scrum?
+- Built Search-Event, Detail-Event page
+- Restructred the FAQ page
+- Finished merge header/footder to FAQ, Search-Event, Detail-Event, Detail-Sightseeing pages.
+
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Build the linkage between pages
+- Update the need-help button link to FAQ page
+
+3. Where do I need assistance? What do I need to figure out?
+
+
+
 2020/10/26 Edwin Li
 1. What I have done / not done since last Scrum?
 - the first version of service page
