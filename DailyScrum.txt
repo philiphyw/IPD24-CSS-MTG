@@ -31,6 +31,16 @@ Each member writes down answers to 3 questions in the following format:
 - new header/footer of pages
 3. Where do I need assistance? What do I need to figure out?
 
+2020/10/27 Andrey Lyamkin
+1. What I have done / not done since last Scrum?
+- Built page to send information about sightseeing for administration.
+- Built page for user account
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Check links for landing page
+- Debug pages
+- Work on responsivness
+3. Where do I need assistance? What do I need to figure out?
+
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 2020/10/26 Philip Huang
