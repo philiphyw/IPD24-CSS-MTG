@@ -45,8 +45,22 @@
     .nav-menu a {
         font-size: 1.5rem;
     }
-}
+    .heading-primary {
+        line-height: 0.5rem;
+    }
+    .heading_primary-main {
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
 
+    }
+    .heading_primary-sub {
+        letter-spacing: 0.5rem;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
 
 /* style footer */
 .div-border-top {
@@ -54,9 +68,10 @@
 }
 .footer ul {
     list-style: none;
+    padding-left:0;
 }
 .footer li {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 .footer a {
     text-decoration: none;
@@ -206,19 +221,6 @@
 
     80% {
         transform: translateX(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-        
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(1rem)
     }
 
     100% {
