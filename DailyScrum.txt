@@ -16,6 +16,18 @@ Each member writes down answers to 3 questions in the following format:
 - header template (for all to update)
 - user page (including user admin)
 
+
+2020/10/27 Philip Huang
+1. What I have done / not done since the last Scrum?
+- Build the linkage between detail-event and detail-sightseeing pages
+- Build a detail-service page(the profile of a supplier/partner)
+- Adjust the filter on search-event page.
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Improve the picture scaling in responsive layout for all detail pages
+- Fix the nav bar buttons in responvise lyaout
+- Relink header/footer for all detail pages, FAQ, search-event page. 
+3. Where do I need assistance? What do I need to figure out?
+
 2020/10/26 Philip Huang
 1. What I have done / not done since the last Scrum?
 - Built Search-Event, Detail-Event page
