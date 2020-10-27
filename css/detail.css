@@ -9,14 +9,21 @@
   --dark-text-color: rgb(2, 36, 44);
 }
 
+
+
 body {
-  min-width: 575.98px;
   font-family: "Lato", sans-serif;
   font-size: large;
   background-color: #ffffff;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+
+.container{
+  margin-right: 0;
+
 }
 
 
@@ -52,14 +59,22 @@ body {
 
 .carousel-item {
   text-align: center;
-  min-height: 380px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-  height: 400px
+  /* Prevent carousel from being distorted if for some reason image doesn't load */
+  /* min-height: 380px;  */
+  /* height: 400px */
+  
 }
 
 
-.carousel-item img{
-  height: 100%;
-  width: 100%;
+/* .carousel-item img{
+ 
+  
+} */
+
+.my-carousel-img{
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .carousel-text-bg{
@@ -76,8 +91,9 @@ body {
 .gallery-item{
   position: relative;
   text-align: center;
-  min-height: 300px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-  /* height: 250px */
+   /* Prevent carousel from being distorted if for some reason image doesn't load */
+   min-height: 300px; 
+  width: 100%;
 }
 
 .gallery-item img{
