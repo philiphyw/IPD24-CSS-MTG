@@ -9,12 +9,17 @@ Each member writes down answers to 3 questions in the following format:
 3. Where do I need assistance? What do I need to figure out?
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-2020/10/26 Andrey Lyamkin
+2020/10/27 Edwin Li
 1. What I have done / not done since last Scrum?
--...
-2. What I plan to do from this scrum to next(next 24 hours)?:
-- header template (for all to update)
-- user page (including user admin)
+- service search
+- sightseeing search
+- partner page
+2. What I plan to do from this scrum to next? (next 24 hours)?
+- debug of pages
+- new header/footer of pages
+3. Where do I need assistance? What do I need to figure out?
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 2020/10/27 Philip Huang
