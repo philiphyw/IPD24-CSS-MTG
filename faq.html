@@ -27,36 +27,45 @@
 
 <body>
       <!-- HEADER -->
-      <div class="header">
-        <nav class="container-fluid py-2 bg-dark navbar-dark">         
-            <div class="row justify-content-between align-items-center">
-                <a href="index.html" class="link-reset text-custom h2">MTG</a>
-                <div class="nav-menu d-flex justify-content-between align-items-center">
-                    <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post" class="form-inline mr-4 d-none d-md-block ">
-                        <div class="input-group">                    
-                            <input type="text" class="form-control" placeholder="Search" name="search">
-                            <div class="input-group-append">
-                                <button type="submit" class="btn btn-secondary"><i class="fa fa-search text-custom"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                    <a href="#" class="link-reset mr-4 text-uppercase" role="button"><i class="far fa-comment-dots"></i><span class="d-none d-sm-inline">need help?</span></a>
-                    <a href="#" class="link-reset mr-4 text-uppercase" role="button"><i class="fas fa-globe"></i><span class="d-none d-sm-inline">fr</span></a>
-                    <a href="#modal_login" class="link-reset text-uppercase" role="button" data-toggle="modal"><i class="fas fa-sign-in-alt"></i><span class="d-none d-sm-inline">log in</span></a>
-                </div>
+      <div class="header mb-4">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="index.html" class="link-reset text-custom"><span class="brand">MTG</span></a>
+            <button class="navbar-toggler text-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto nav-menu">
+                <li class="nav-item">
+                    <a href="search-sightseeing.html" class="nav-link link-reset" role="button"><span>attractions</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="search-event.html" class="nav-link" role="button"><span>events</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="search-service.html" class="nav-link" role="button"><span>services</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link" role="button"><i class="far fa-comment-dots"></i><span>need help?</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" role="button"><i class="fas fa-globe"></i><span>fr</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" id="dropdownMenuOffset" data-toggle="dropdown"><i class="fas fa-user"></i><span>User</span></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="account.html">Account</a>
+                        <a class="dropdown-item" href="#">Settings &amp; Privacy</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log out</a>
+                      </div>
+                </li>
+              </ul>
+             
             </div>
-        </nav>
-        <div class="col-12 my-1">
-            <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post" class="form-inline d-md-none">
-                <div class="input-group">                    
-                    <input type="text" class="form-control" placeholder="Search" name="search">
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-secondary"><i class="fa fa-search text-custom"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
+          </nav>
+        
+    </div> 
     <!-- End of Header -->
 
 
