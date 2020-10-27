@@ -10,6 +10,17 @@
 }
 
 
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space /
+    background: transparent; / optional: just make scrollbar invisible /
+    }*/
+  }
+
+
 
 body {
   font-family: "Lato", sans-serif;
@@ -21,10 +32,7 @@ body {
 }
 
 
-.container{
-  margin-right: 0;
 
-}
 
 
 .event-pic img {
@@ -59,17 +67,11 @@ body {
 
 .carousel-item {
   text-align: center;
-  /* Prevent carousel from being distorted if for some reason image doesn't load */
-  /* min-height: 380px;  */
-  /* height: 400px */
+  
   
 }
 
 
-/* .carousel-item img{
- 
-  
-} */
 
 .my-carousel-img{
   max-width: 100%;
@@ -110,3 +112,5 @@ body {
  padding:0 1rem;
 
 }
+
+

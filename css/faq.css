@@ -2,6 +2,18 @@
     --link-text-color:#1ebba3;
 }
 
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space /
+    background: transparent; / optional: just make scrollbar invisible /
+    }*/
+    
+}
+
 h2 {
     font-family: Arial, Verdana;
     font-weight: 800;
