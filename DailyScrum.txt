@@ -22,6 +22,15 @@ Each member writes down answers to 3 questions in the following format:
 
 3. Where do I need assistance? What do I need to figure out?
 
+2020/10/28 Andrey Lyamkin
+1. What I have done / not done since last Scrum?
+- Workable links for landing page.
+- Debug the pages
+- Improved responsive design 
+2. What I plan to do from this scrum to next(next 24 hours)?:
+- Prepare for project presentation
+- Fix minor bugs
+3. Where do I need assistance? What do I need to figure out?
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 2020/10/27 Philip Huang
