@@ -1,364 +1,508 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Montréal Travail Guide | Partnership</title>
-    <!-- Bootstrap CSS file -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!-- CSS file of icons from Fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <!-- CSS file of google font -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
-    <!-- project CSS file -->
-    <link rel="stylesheet" href="css/service.css">
-  </head>
-    
-  <body>
-    <!--new micro-service modal-->
-    <div class="modal fade" id="newServiceModal" tabindex="-1" role="dialog" aria-labelledby="newServiceModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="newServiceModalLabel">New Micro-Service</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Montréal Travail Guide | Partnership</title>
+        <!-- Bootstrap CSS file -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- CSS file of icons from Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <!-- CSS file of google font -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Indie+Flower'>
+        <!-- project CSS file -->
+        <link rel="stylesheet" href="css/service.css">
+      </head>
+    <body>
+       <!--new micro-service modal-->
+      <div class="modal fade" id="newServiceModal" tabindex="-1" role="dialog" aria-labelledby="newServiceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="newServiceModalLabel">New Micro-Service</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form method="POST" action="https://www.hashemian.com/tools/form-post-tester.php">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Service Description:</label>
+                  <textarea class="form-control" id="message-text" name="message-text" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Contact @:</label>
+                  <input type="text" class="form-control" id="recipient-name" name="recipient-name" required>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-primary" value="submit">
+              </div>
+            </form>
           </div>
-          <form method="POST" action="https://www.hashemian.com/tools/form-post-tester.php">
-            <div class="modal-body">
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Service Description:</label>
-                <textarea class="form-control" id="message-text" name="message-text" required></textarea>
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Contact @:</label>
-                <input type="text" class="form-control" id="recipient-name" name="recipient-name" required>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <input type="submit" class="btn btn-primary" value="submit">
-            </div>
-          </form>
         </div>
       </div>
-    </div>
-    <!--new partner modal-->
-    <div class="modal fade" id="newPartnerModal" tabindex="-1" role="dialog" aria-labelledby="newPartnerModal" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="newPartnerModalLabel">New Partner</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <form method="POST" action="https://www.hashemian.com/tools/form-post-tester.php">
-            <div class="modal-body">
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Description:</label>
-                <textarea class="form-control" id="message-text" name="message-text" required></textarea>
-              </div>
-              <div class="form-group">
-                <label for="website" class="col-form-label">Website:</label>
-                <input type="text" class="form-control" id="website" name="website" required>
-              </div>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="tel" class="col-form-label">Tel:</label>
-                <input type="tel" class="form-control" id="tel" name="tel" required>
-              </div>
+      <!--new partner modal-->
+      <div class="modal fade" id="newPartnerModal" tabindex="-1" role="dialog" aria-labelledby="newPartnerModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="newPartnerModalLabel">New Partner</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <input type="submit" class="btn btn-primary" value="submit">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a href="landing.html" class="navbar-brand">MTG</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav ml-auto mr-5">
-            <a href="landing.html" class="nav-item nav-link">Home</a>
-            <a href="#" class="nav-item nav-link">Sightseeing</a>
-            <a href="#" class="nav-item nav-link">Event</a>              
-            <a href="#" class="nav-item nav-link">Micro-Service</a>
-          </div>
-          <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link">Login</a>
-          </div>
-        </div>
-      </div> 
-    </nav>
-
-    <div class="container-fluid"> <!-- container of service content and footer -->
-      <!--service headline-->
-      <div class="container-fluid service-bg"></div>
-      <div class="container-fluid">
-        <div class="row text-center justify-content-center">
-          <div class="col-md-8">
-            <div class="jumbotron section-headline">
-              <h1 class="display-4">Sell your product Now?</h1>
-              <p class="lead text-dark">We have more than 1M active users to comment/propose services daily. It's the best platform to promote your local services. With our 355 partners, the 12<sup>th</sup> partner conference was held at Montreal in 2019.</p>
-              <hr class="my-4">
-              <div class="container-fluid"> <!--button to activate new micro-service modal-->
-                <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#newPartnerModal" ><h4>Join as Partner</h4></button>
+            <form method="POST" action="https://www.hashemian.com/tools/form-post-tester.php">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Description:</label>
+                  <textarea class="form-control" id="message-text" name="message-text" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="website" class="col-form-label">Website:</label>
+                  <input type="text" class="form-control" id="website" name="website" required>
+                </div>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="tel" class="col-form-label">Tel:</label>
+                  <input type="tel" class="form-control" id="tel" name="tel" required>
+                </div>
               </div>
-            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-primary" value="submit">
+              </div>
+            </form>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid"> 
-        <div class="d-flex flex-row flex-wrap justify-content-evenly align-items-center">
-
-          <div class="container-fluid highlightedService">
-            <div class="row carousel-row">
-              <div id="hotelCarousel" class="col carousel slide" data-interval="5000" data-ride="carousel">
-                  <h2>Hotel</h2>
-                  <!-- Carousel indicators -->
-                  <ol class="carousel-indicators">
-                      <li data-target="#hotelCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#hotelCarousel" data-slide-to="1"></li>
-                      <li data-target="#hotelCarousel" data-slide-to="2"></li>
-                  </ol>
-                  <!-- Wrapper for carousel items -->
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <a href=""> <img src="img/lepetit-2.jpg" class="img-fluid"
-                                  alt="sainte-helene"></a>
-                          <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
-                              <!-- <h5 class="carousel-text">Ile Sainte-Helene</h5> -->
-                              <p class="carousel-text text-left"><cite>"Location was fantastic. Loved being in the oldest quarter in Montreal. Hotel had a nice blend keeping the original brick walls with a contemporary flair."</cite></p>
-                              <p class="carousel-text text-right">
-                                  <span class="event-rating">
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                  </span>
-                                   by dawoodwoman 
-                              </p>
+    <!-- HEADER -->
+        <div class="header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="index.html" class="link-reset text-custom"><span class="brand">MTG</span></a>
+                <button class="navbar-toggler text-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto nav-menu">
+                    <li class="nav-item">
+                        <a href="search-sightseeing.html" class="nav-link link-reset" role="button"><span>attractions</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="search-event.html" class="nav-link" role="button"><span>events</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="serch-service.html" class="nav-link" role="button"><span>services</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link" role="button"><i class="far fa-comment-dots"></i><span>need help?</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" role="button"><i class="fas fa-globe"></i><span>fr</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" id="dropdownMenuOffset" data-toggle="dropdown"><i class="fas fa-user"></i><span>User</span></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuOffset">
+                            <a class="dropdown-item" href="account.html">Account</a>
+                            <a class="dropdown-item" href="#">Settings &amp; Privacy</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
                           </div>
-                      </div>
-                      <div class="carousel-item">
-                          <a href=""> <img src="img/lepetit-3.jpg" class="img-fluid"
-                                  alt=""></a>
-
-                          <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
-                              <p class="carousel-text text-left"><cite>"An other-worldly, pretend like it's my condo kinda life where I would rather stay in than go out. Blackout blinds for good sleep, then wake up looking up at a sunroof where the rain pitter-pattered. "</cite></p>
-                              <p class="carousel-text text-right">
-                                  <span class="event-rating">
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                      <i class="far fa-star"></i>
-                                  </span>
-                                  by Kelly A
-                              </p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <a href=""> <img src="img/lepetit-4.jpg" class="img-fluid"
-                                alt=""></a>
-
-                        <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
-                            <p class="carousel-text text-left"><cite>"This hotel is in a great location near the port in Old Montreal. We stayed in the large room which is spacious with alot of natural light. Delicious croissants for breakfast. "</cite></p>
-                            <p class="carousel-text text-right">
-                                <span class="event-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                by sandrapco 
-                            </p>
-                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div> 
+        <div class="container-fluid"> <!-- container of service content and footer -->
+            <!--service headline-->
+            <div class="container-fluid service-bg"></div>
+            <div class="container-fluid">
+              <div class="row text-center justify-content-center">
+                <div class="col-md-8">
+                  <div class="jumbotron section-headline">
+                    <h1 class="display-4">Sell your product Now?</h1>
+                    <p class="lead text-dark">We have more than 1M active users to comment/propose services daily. It's the best platform to promote your local services. With our 355 partners, the 12<sup>th</sup> partner conference was held at Montreal in 2019.</p>
+                    <hr class="my-4">
+                    <div class="container-fluid"> <!--button to activate new micro-service modal-->
+                      <button type="button" class="btn btn-primary my-2" data-toggle="modal" data-target="#newPartnerModal" ><h4>Join as Partner</h4></button>
                     </div>
-                  </div>
-                  <!-- Carousel controls -->
-                  <a class="carousel-control-prev" href="#hotelCarousel" data-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#hotelCarousel" data-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                  </a>
-              </div>
-              <div id="rentalCarousel" class="col carousel slide" data-interval="2800" data-ride="carousel">
-                <h2>Car Rental</h2>
-                <!-- Carousel indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#rentalCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#rentalCarousel" data-slide-to="1"></li>
-                    <li data-target="#rentalCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for carousel items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href=""> <img src="img/car-1.jpg" class="img-fluid"
-                                alt="sainte-helene"></a>
-                        <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
-                            <!-- <h5 class="carousel-text">Ile Sainte-Helene</h5> -->
-                            <p class="carousel-text text-left"><cite>"Long story short, I had difficulties with my car and returned and it was handled swiftly with no difficulties. I was extremely happy with the outcome. I was impressed with the woman that assisted me.</cite></p>
-                            <p class="carousel-text text-right">
-                                <span class="event-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                 by rock1269 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href=""> <img src="img/car-2.jpg" class="img-fluid"
-                                alt=""></a>
-
-                        <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
-                            <p class="carousel-text text-left"><cite>The car is clean and big enough for 5 friends together.</cite></p>
-                            <p class="carousel-text text-right">
-                                <span class="event-rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                by Cathy F.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                      <a href=""> <img src="img/car-3.jpg" class="img-fluid"
-                              alt=""></a>
-
-                      <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
-                          <p class="carousel-text text-left"><cite>Escape is suitable for 2 persons' short trip. The weekend promotion is awesome. </cite></p>
-                          <p class="carousel-text text-right">
-                              <span class="event-rating">
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i>
-                                  <i class="far fa-star"></i>
-                                  <i class="far fa-star"></i>
-                              </span>
-                              by chichitaux 
-                          </p>
-                      </div>
                   </div>
                 </div>
-                <!-- Carousel controls -->
-                <a class="carousel-control-prev" href="#rentalCarousel" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#rentalCarousel" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+              </div>
             </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid service-wall"> <!--micro-services-->
-        <div class="board-caption d-flex flex-row align-items-end"><h2>Micro-Service</h2><h4 class="ml-5"><i>free for individual or small business</i></h4></div>
-        <div class="service-post-board d-flex flex-row flex-wrap over-flow-hidden justify-content-center align-items-center">
-          <div class="serviceCardPink rotate1"><p class="handwritting">Hundreds of eclectic stores sit side by side along this outdoor shopping strip</p><p>@Saint-Hubert Street</p></div>
-          <div class="serviceCardGreen"><p class="handwritting">Unique, healthy and environmentally-friendly, Maison Jacynthe offers toxin-free, vegan skincare and make-up respecting skin integrity. </p><p>@543 Sherbrooke</p></div>
-          <div class="serviceCardOrange rotate1 movw2"><p class="handwritting">Bikes available for tour of &apos; Montréal On Wheels &apos;</p><p class="handwritting">Schedule: May 1 to Oct 31: Daily, 9 a.m. to 8 p.m.</p><p>@514 889 1025</p></div>
-          <div class="serviceCardBlue rotate2"><p class="handwritting">Flavours of Montreal - South - Fitz & Follwell</p><p>Walking tours @Corner of Clark Street and De La Gauchetière Street West</p></div>
-        </div>
-      </div>
-      <div class="container-fluid"> <!--button to activate new micro-service modal-->
-        <button type="button" class="btn btn-primary my-2 float-right mr-5" data-toggle="modal" data-target="#newServiceModal" >Submit New Micro-Service</button>
-      </div>
       
-      <div class="container-fluid mt-5" id="food-service"> <!--restaurant-->
-        <h2>Food Favourites</h2>
-        <div class="d-flex flex-row flex-wrap over-flow-hidden justify-content-center align-items-center">
-          <div class="serviceCard mx-2 my-2">
-            <img src="img/lovrestaurant-d1.jpg">
-            <div class="serviceRemark px-5 py-3">
-              <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
+            <div class="container-fluid"> 
+              <div class="d-flex flex-row flex-wrap justify-content-evenly align-items-center">
+      
+                <div class="container-fluid highlightedService">
+                  <div class="row carousel-row">
+                    <div id="hotelCarousel" class="col carousel slide" data-interval="5000" data-ride="carousel">
+                        <h2>Hotel</h2>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#hotelCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#hotelCarousel" data-slide-to="1"></li>
+                            <li data-target="#hotelCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href=""> <img src="img/lepetit-2.jpg" class="img-fluid"
+                                        alt="sainte-helene"></a>
+                                <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
+                                    <!-- <h5 class="carousel-text">Ile Sainte-Helene</h5> -->
+                                    <p class="carousel-text text-left"><cite>"Location was fantastic. Loved being in the oldest quarter in Montreal. Hotel had a nice blend keeping the original brick walls with a contemporary flair."</cite></p>
+                                    <p class="carousel-text text-right">
+                                        <span class="event-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </span>
+                                         by dawoodwoman 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href=""> <img src="img/lepetit-3.jpg" class="img-fluid"
+                                        alt=""></a>
+      
+                                <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
+                                    <p class="carousel-text text-left"><cite>"An other-worldly, pretend like it's my condo kinda life where I would rather stay in than go out. Blackout blinds for good sleep, then wake up looking up at a sunroof where the rain pitter-pattered. "</cite></p>
+                                    <p class="carousel-text text-right">
+                                        <span class="event-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        by Kelly A
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                              <a href=""> <img src="img/lepetit-4.jpg" class="img-fluid"
+                                      alt=""></a>
+      
+                              <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
+                                  <p class="carousel-text text-left"><cite>"This hotel is in a great location near the port in Old Montreal. We stayed in the large room which is spacious with alot of natural light. Delicious croissants for breakfast. "</cite></p>
+                                  <p class="carousel-text text-right">
+                                      <span class="event-rating">
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="far fa-star"></i>
+                                          <i class="far fa-star"></i>
+                                      </span>
+                                      by sandrapco 
+                                  </p>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#hotelCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#hotelCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div id="rentalCarousel" class="col carousel slide" data-interval="2800" data-ride="carousel">
+                      <h2>Car Rental</h2>
+                      <!-- Carousel indicators -->
+                      <ol class="carousel-indicators">
+                          <li data-target="#rentalCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#rentalCarousel" data-slide-to="1"></li>
+                          <li data-target="#rentalCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <!-- Wrapper for carousel items -->
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <a href=""> <img src="img/car-1.jpg" class="img-fluid"
+                                      alt="sainte-helene"></a>
+                              <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
+                                  <!-- <h5 class="carousel-text">Ile Sainte-Helene</h5> -->
+                                  <p class="carousel-text text-left"><cite>"Long story short, I had difficulties with my car and returned and it was handled swiftly with no difficulties. I was extremely happy with the outcome. I was impressed with the woman that assisted me.</cite></p>
+                                  <p class="carousel-text text-right">
+                                      <span class="event-rating">
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                      </span>
+                                       by rock1269 
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <a href=""> <img src="img/car-2.jpg" class="img-fluid"
+                                      alt=""></a>
+      
+                              <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
+                                  <p class="carousel-text text-left"><cite>The car is clean and big enough for 5 friends together.</cite></p>
+                                  <p class="carousel-text text-right">
+                                      <span class="event-rating">
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="far fa-star"></i>
+                                          <i class="far fa-star"></i>
+                                      </span>
+                                      by Cathy F.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href=""> <img src="img/car-3.jpg" class="img-fluid"
+                                    alt=""></a>
+      
+                            <div class="carousel-caption d-none d-md-block text-white carousel-text-bg">
+                                <p class="carousel-text text-left"><cite>Escape is suitable for 2 persons' short trip. The weekend promotion is awesome. </cite></p>
+                                <p class="carousel-text text-right">
+                                    <span class="event-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    by chichitaux 
+                                </p>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- Carousel controls -->
+                      <a class="carousel-control-prev" href="#rentalCarousel" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#rentalCarousel" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                      </a>
+                  </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="serviceTitle">
-              <h3 class="ml-5 my-5 mr-5">LOV de la Montagne</h3>
-              <p class="mx-5 my-5">Healthy options for those concerned about their well-being and the environment around them.</p>
-              <p class="mx-5 my-2">1232 de la Montagne Street, Montreal</p>
-              <p class="mx-5">514-287-1155</p>
+      
+            <div class="container-fluid service-wall"> <!--micro-services-->
+              <div class="board-caption d-flex flex-row align-items-end"><h2>Micro-Service</h2><h4 class="ml-5"><i>free for individual or small business</i></h4></div>
+              <div class="service-post-board d-flex flex-row flex-wrap over-flow-hidden justify-content-center align-items-center">
+                <div class="serviceCardPink rotate1"><p class="handwritting">Hundreds of eclectic stores sit side by side along this outdoor shopping strip</p><p>@Saint-Hubert Street</p></div>
+                <div class="serviceCardGreen"><p class="handwritting">Unique, healthy and environmentally-friendly, Maison Jacynthe offers toxin-free, vegan skincare and make-up respecting skin integrity. </p><p>@543 Sherbrooke</p></div>
+                <div class="serviceCardOrange rotate1 movw2"><p class="handwritting">Bikes available for tour of &apos; Montréal On Wheels &apos;</p><p class="handwritting">Schedule: May 1 to Oct 31: Daily, 9 a.m. to 8 p.m.</p><p>@514 889 1025</p></div>
+                <div class="serviceCardBlue rotate2"><p class="handwritting">Flavours of Montreal - South - Fitz & Follwell</p><p>Walking tours @Corner of Clark Street and De La Gauchetière Street West</p></div>
+              </div>
+            </div>
+            <div class="container-fluid"> <!--button to activate new micro-service modal-->
+              <button type="button" class="btn btn-primary my-2 float-right mr-5" data-toggle="modal" data-target="#newServiceModal" >Submit New Micro-Service</button>
+            </div>
+            
+            <div class="container-fluid mt-5" id="food-service"> <!--restaurant-->
+              <h2>Food Favourites</h2>
+              <div class="d-flex flex-row flex-wrap over-flow-hidden justify-content-center align-items-center">
+                <div class="serviceCard mx-2 my-2">
+                  <img src="img/lovrestaurant-d1.jpg">
+                  <div class="serviceRemark px-5 py-3">
+                    <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
+                  </div>
+                  <div class="serviceTitle">
+                    <h3 class="ml-5 my-5 mr-5">LOV de la Montagne</h3>
+                    <p class="mx-5 my-5">Healthy options for those concerned about their well-being and the environment around them.</p>
+                    <p class="mx-5 my-2">1232 de la Montagne Street, Montreal</p>
+                    <p class="mx-5">514-287-1155</p>
+                  </div>
+                </div>
+                <div class="serviceCard mx-2 my-2">
+                  <img src="img/ristorantebeatrice-d1.jpg">
+                  <div class="serviceRemark px-5 py-3">
+                    <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></h4>
+                  </div>
+                  <div class="serviceTitle">
+                    <h3 class="ml-5 my-5 mr-5">Ristorante Beatrice</h3>
+                    <p class="mx-5 my-5">Enjoy an ambiance steeped in elegance, fresh, mouth-watering flavours, a European-style garden (in summer) and la dolce vita.</p>
+                    <p class="mx-5 my-2">1504 Sherbrooke Street West, Montreal</p>
+                    <p class="mx-5">514-937-6009</p>
+                  </div>
+                </div>
+                <div class="serviceCard mx-2 my-2">
+                  <img src="img/lovrestaurant-d2.jpg">
+                  <div class="serviceRemark px-5 py-3">
+                    <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
+                  </div>
+                  <div class="serviceTitle">
+                    <h3 class="ml-5 my-5 mr-5">Chasse Galerie</h3>
+                    <p class="mx-5 my-5">Inspired by Québec legend, this restaurant enchants with an eclectic menu of modern market cuisine so delicious, it’s diabolical!</p>
+                    <p class="mx-5 my-2">4110 Saint-Denis Street, Montreal</p>
+                    <p class="mx-5">514-419-9601</p>
+                  </div>
+                </div>
+                <div class="serviceCard mx-2 my-2">
+                  <img src="img/ristorantebeatrice-d2.jpg">
+                  <div class="serviceRemark px-5 py-3">
+                    <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star-half"></i></h4>
+                  </div>
+                  <div class="serviceTitle">
+                    <h3 class="ml-5 my-5 mr-5">Kampai</h3>
+                    <p class="mx-5 my-5">Savour, sip and share at this downtown haven of affordable Asian comfort food with just the right atmosphere for any occasion.</p>
+                    <p class="mx-5 my-2">1616 Sainte-Catherine West, Montreal</p>
+                    <p class="mx-5">514-379-6161</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="serviceCard mx-2 my-2">
-            <img src="img/ristorantebeatrice-d1.jpg">
-            <div class="serviceRemark px-5 py-3">
-              <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></h4>
+    <!-- FOOTER -->
+       <footer class="footer bg-dark pt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <ul>
+                            <li><a href="partner.html">Partners</a></li>
+                            <li><a href="video.html">Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12 d-flex align-items-end">
+                        <div class="social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row div-border-top copyrights mt-4 py-4">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 d-flex">
+                        <p class="text-white ml-md-auto">
+                            &copy;2020 Motreal Travelling Guide
+                        </p>
+                    </div>
+                        
+                </div>
+                
             </div>
-            <div class="serviceTitle">
-              <h3 class="ml-5 my-5 mr-5">Ristorante Beatrice</h3>
-              <p class="mx-5 my-5">Enjoy an ambiance steeped in elegance, fresh, mouth-watering flavours, a European-style garden (in summer) and la dolce vita.</p>
-              <p class="mx-5 my-2">1504 Sherbrooke Street West, Montreal</p>
-              <p class="mx-5">514-937-6009</p>
-            </div>
-          </div>
-          <div class="serviceCard mx-2 my-2">
-            <img src="img/lovrestaurant-d2.jpg">
-            <div class="serviceRemark px-5 py-3">
-              <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h4>
-            </div>
-            <div class="serviceTitle">
-              <h3 class="ml-5 my-5 mr-5">Chasse Galerie</h3>
-              <p class="mx-5 my-5">Inspired by Québec legend, this restaurant enchants with an eclectic menu of modern market cuisine so delicious, it’s diabolical!</p>
-              <p class="mx-5 my-2">4110 Saint-Denis Street, Montreal</p>
-              <p class="mx-5">514-419-9601</p>
-            </div>
-          </div>
-          <div class="serviceCard mx-2 my-2">
-            <img src="img/ristorantebeatrice-d2.jpg">
-            <div class="serviceRemark px-5 py-3">
-              <h4><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star-half"></i></h4>
-            </div>
-            <div class="serviceTitle">
-              <h3 class="ml-5 my-5 mr-5">Kampai</h3>
-              <p class="mx-5 my-5">Savour, sip and share at this downtown haven of affordable Asian comfort food with just the right atmosphere for any occasion.</p>
-              <p class="mx-5 my-2">1616 Sainte-Catherine West, Montreal</p>
-              <p class="mx-5">514-379-6161</p>
-            </div>
-          </div>
-        </div>
-      </div>
+       </footer>
 
-      <hr class="my-5">
-      <footer class="footer">
-        <div class="row">
-          <div class="col-md-6 text-dark">
-            <p>Copyright © 2020 Montréal Traival Guide</p>
-          </div>
-          <div class="col-md-6 text-md-right">
-            <a href="#" class="text-dark">Terms of Use</a> 
-            <span class="text-muted mx-2">|</span> 
-            <a href="#" class="text-dark">Privacy Policy</a>
-          </div>
+       <!-- MODAL REGISTRATION WINDOWS -->
+        <!-- Login modal -->
+        <div class="modal_section">
+            <div id="modal_login" class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Log in</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
+                            <div class="modal-body">
+                                
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="login_emailInput">Email</label>
+                                            <input id="login_emailInput" name="login_emailInput" type="email" class="form-control form-control-custom" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="login_passInput">Password</label>
+                                            <input id="login_passInput" name="login_passInput" type="password" class="form-control form-control-custom" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pl-3">
+                                    <div class="col_12">
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="login_rememberMe" name="login_rememberMe">
+                                            <label class="form-check-label" for="login_rememberMe">Remember Me</label>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn text-custom" href="#modal_register" data-dismiss="modal" role="button" data-toggle="modal">Register</a>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-custom">Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
-    </div>
-
+            <!-- Register modal -->
+        <div class="modal_section">
+            <div id="modal_register" class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Register</h5>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="register_fNameInput">First Name</label>
+                                            <input type="text" class="form-control form-control-custom" id="register_fNameInput" name="register_fNameInput" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="register_lNameInput">Last Name</label>
+                                            <input type="text" class="form-control form-control-custom" id="register_lNameInput" name="register_lNameInput" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="register_emailInput">Email</label>
+                                            <input type="email" class="form-control form-control-custom" id="register_emailInput" name="register_emailInput" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="register_passInput">Password</label>
+                                            <input type="password" class="form-control form-control-custom" id="register_passInput" name="register_passInput" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-custom">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
